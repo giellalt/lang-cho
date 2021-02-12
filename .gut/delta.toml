@@ -1,0 +1,9 @@
+template = ""
+rev_id = 42
+template_sha = "29155a4fcbf922504430dcd9c9366fea7d7f7f9a"
+
+[replacements]
+__LICENCE__ = "GPLv3"
+__UND2C__ = "cho"
+__UNDEFINED__ = "Choctaw"
+__UND__ = "cho"

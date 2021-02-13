@@ -1,8 +1,15 @@
 !! Verbs
 !  -----
-!! Verbs in the Choctaw language are actions.
+!! Verbs in the Choctaw language are actions
 
-LEXICON Verbs
-verb    Persons   ;
-
-! vim: set ft=xfst-lexc:
+LEXICON V
+  taloowa V-I-II ;
+  piNsah  V-I-II ; ! see
+  haNkloh V-I-II ; ! hear
+  hoNwah  V-I-II ; ! smell
+  kobaffih V-I-II ; ! break
+  akammih  V-I-II ; ! close
+  bakaffih V-I-II ; ! split (something) up
+  hofaNtichih V-I-II ; ! raise, rear
+  honnih      V-I-II ; ! boil (something)
+  hoppih      V-I-II ; ! bury

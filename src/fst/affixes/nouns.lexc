@@ -2,14 +2,74 @@
 !  ---------------
 !! The Choctaw language nouns inflect in cases.
 
-LEXICON Cases
- +N+Sg+nom:0   #     ;
- +N+Pl+nom:i   #     ;
- +N+Sg+loc:as  #     ;
- +N+Pl+loc:ias #     ;
- +N+Sg+acc:at  #     ;
- +N+Pl+acc:iat #     ;
-         #:0   Nouns ;
+LEXICON pre-dem
+ 0 N-dem ;
+ 0 N-dem-clausal ;
 
-! vim: set ft=xfst-lexc:
+LEXICON N-poss
+ @U.POSS.1SG@+Poss+1Sg:@U.POSS.1SG@ # ;
+ @U.POSS.2SG@+Poss+2Sg:@U.POSS.2SG@ # ;
+ @U.POSS.1PL@+Poss+1Pl:@U.POSS.1PL@ # ;
+ @U.POSS.2PL@+Poss+2Pl:@U.POSS.2PL@ # ;
+ @U.POSS.3@+Poss+3:@U.POSS.3@ # ;
+ @D.POSS@ #;
+
+LEXICON N-case
+ +Nom:^%{nom%}               N-poss ;
+ +Acc:^%{acc%}               N-poss ;
+ @D.REQC@+Acc:@D.REQC@      N-poss ; ! Sometimes accusative is unmarked
+ @D.REQC@:@D.REQC@          N-poss ; ! Sometimes no case is marked
+ @D.REQC@+Nom2:@D.REQC@^ato N-poss ; ! +focus
+ @D.REQC@+Acc2:@D.REQC@^ano N-poss ;
+ @D.REQC@+Too:@D.REQC@^kia  N-poss ; ! = also, too, replaces case marker, also means "every" on kaNna and naNna, "but" on verbs (TODO) 
+
+LEXICON N-dem-clausal
+ @U.DEM.THAT@+That:@U.DEM.THAT@^m%{a%}%{k%} N-det-clausal ; ! Can appear twice
+ @U.DEM.THIS@+This:@U.DEM.THIS@^p%{a%}%{k%} N-det-clausal ; ! Can appear twice
+ @P.DEM.OBL@+Obl:@P.DEM.OBL@^ak           N-det-clausal ;
+ N-det-clausal ;
+
+LEXICON N-dem
+ @U.DEM.THAT@+That:@U.DEM.THAT@^m%{a%}%{k%} N-det ;
+ @U.DEM.THIS@+This:@U.DEM.THIS@^p%{a%}%{k%} N-det ;
+ N-det ;
+
+LEXICON N-det
+ @D.DEM.OBL@+Obl:@D.DEM.OBL@^ak           N-det2 ;
+ +Pej:^akhii        N-det2 ;
+ +Compar:^ook       N-pej  ;
+ +Only:^ba          N-det2 ;
+ +Too2:^makoo       N-det2 ;
+ +Too2:^ohmakoo     N-det2 ; ! equivalent to makoo
+ N-det2 ;
+
+LEXICON N-pej
+ +Pej:^akhii N-det2 ;
+ N-det2 ;
+
+LEXICON N-det-clausal
+ +Must:^polla       N-comp  ; ! must or because
+ +Emph:^akiNli      N-tpart ;
+ +Very:^fiihna      N-tpart ; ! very or exactly
+ +Very:^fiihna      N-comp  ;
+ +Only2:^baano      N-tpart ;
+ +Prev:^aash        N-prev  ; ! previously mentioned, relatives, not marked for case unless with participial ending
+
+LEXICON N-comp
+ @P.REQC.T@+Comp+Con:@P.REQC.T@^ka^akoo N-case ;
+ @P.REQC.T@+Comp:@P.REQC.T@^ka          N-case ; ! less frequent
+
+LEXICON N-tpart
+ +Tns+Part:^h^oo N-case ;
+ +Tns:^h         N-poss ; ! maybe less frequent?
+
+LEXICON N-prev
+ +Nom:^oosh N-poss ;
+ +Acc:^oN   N-poss ;
+ N-poss ;
+
+LEXICON N-det2
+ +Con:^akoo N-case ;
+ +Foc:^oo   N-case ;
+ N-case ;
 

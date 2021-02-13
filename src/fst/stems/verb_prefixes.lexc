@@ -1,0 +1,80 @@
+!! Prefixes
+!  --------
+!! Prefixes in the Choctaw language are bound to beginning of other words.
+
+LEXICON V-I
+  ! I-II and I-III class
+  @U.SUBJ.1SG@                    V-III ;
+  @U.SUBJ.2SG@:@U.SUBJ.2SG@ish    V-III ;
+  @U.SUBJ.1PL@:@U.SUBJ.1PL@%{il%} V-III ;
+  @U.SUBJ.2PL@:@U.SUBJ.2PL@hash   V-III ;
+  @U.SUBJ.UNSP@                   V-III ;
+
+LEXICON V-III
+  ! I-II verbs
+  @U.ARG.I-II@@U.DAT.1SG@:@U.ARG.I-II@@U.DAT.1SG@%{s%}a%{mN%}   V-II ;
+  @U.ARG.I-II@@U.DAT.2SG@:@U.ARG.I-II@@U.DAT.2SG@chi%{mN%}      V-II ;
+  @U.ARG.I-II@@U.DAT.1PAUC@:@U.ARG.I-II@@U.DAT.1PAUC@pi{mN%}    V-II ;
+  @U.ARG.I-II@@U.DAT.1MULT@:@U.ARG.I-II@@U.DAT.1MULT@hapi%{mN%} V-II ;
+  @U.ARG.I-II@@U.DAT.2PL@:@U.ARG.I-II@@U.DAT.2PL@hachi%{mN%}    V-II ;
+  @U.ARG.I-II@@U.DAT.UNSP@:@U.ARG.I-II@@U.DAT.UNSP@im           V-II ;
+  @U.ARG.I-II@@U.DAT.NONE@                                      V-II ;
+  ! I-III verbs
+  @U.ARG.I-III@@U.OBJ.1SG@:@U.ARG.I-III@@U.OBJ.1SG@%{s%}a%{mN%}   V ;
+  @U.ARG.I-III@@U.OBJ.2SG@:@U.ARG.I-III@@U.OBJ.2SG@chi%{mN%}      V ;
+  @U.ARG.I-III@@U.OBJ.1PAUC@:@U.ARG.I-III@@U.OBJ.1PAUC@pi{mN%}    V ;
+  @U.ARG.I-III@@U.OBJ.1MULT@:@U.ARG.I-III@@U.OBJ.1MULT@hapi%{mN%} V ;
+  @U.ARG.I-III@@U.OBJ.2PL@:@U.ARG.I-III@@U.OBJ.2PL@hachi%{mN%}    V ;
+  @U.ARG.I-III@@U.OBJ.UNSP@:@U.ARG.I-III@@U.OBJ.UNSP@im           V ;
+
+LEXICON V-II
+  ! I-II, II-III class
+  @U.OBJ.1SG@:@U.OBJ.1SG@sa       V ;
+  @U.OBJ.2SG@:@U.OBJ.2SG@chi      V ;
+  @U.OBJ.1PAUC@:@U.OBJ.1PAUC@pi   V ;
+  @U.OBJ.1MULT@:@U.OBJ.1MULT@hapi V ;
+  @U.OBJ.2PL@:@U.OBJ.2PL@hachi    V ;
+  @U.OBJ.UNSP@                    V ;
+  
+LEXICON V-II-alt
+  ! II-II class
+  @D.OBJ@@U.ARG.II-II@@U.OBJ.1SG@:@D.OBJ@@U.ARG.II-II@@U.OBJ.1SG@sa       V-II ;
+  @D.OBJ@@U.ARG.II-II@@U.OBJ.2SG@:@D.OBJ@@U.ARG.II-II@@U.OBJ.2SG@chi      V-II ;
+  @D.OBJ@@U.ARG.II-II@@U.OBJ.1PAUC@:@D.OBJ@@U.ARG.II-II@@U.OBJ.1PAUC@pi   V-II ;
+  @D.OBJ@@U.ARG.II-II@@U.OBJ.1MULT@:@D.OBJ@@U.ARG.II-II@@U.OBJ.1MULT@hapi V-II ;
+  @D.OBJ@@U.ARG.II-II@@U.OBJ.2PL@:@D.OBJ@@U.ARG.II-II@@U.OBJ.2PL@hachi    V-II ;
+  @D.OBJ@@U.ARG.II-II@@U.OBJ.UNSP@                                        V-II ;
+  ! II-II class subjects
+  @R.OBJ@@U.ARG.II-II@@U.OBJ.1SG@:@R.OBJ@@U.ARG.II-II@@U.OBJ.1SG@sa       V ;
+  @R.OBJ@@U.ARG.II-II@@U.OBJ.2SG@:@R.OBJ@@U.ARG.II-II@@U.OBJ.2SG@chi      V ;
+  @R.OBJ@@U.ARG.II-II@@U.OBJ.1PAUC@:@R.OBJ@@U.ARG.II-II@@U.OBJ.1PAUC@pi   V ;
+  @R.OBJ@@U.ARG.II-II@@U.OBJ.1MULT@:@R.OBJ@@U.ARG.II-II@@U.OBJ.1MULT@hapi V ;
+  @R.OBJ@@U.ARG.II-II@@U.OBJ.2PL@:@R.OBJ@@U.ARG.II-II@@U.OBJ.2PL@hachi    V ;
+  @R.OBJ@@U.ARG.II-II@@U.OBJ.UNSP@                                        V ;
+  ! III-II class, they don't like to have non-3 obj here
+  @U.ARG.III-II@@U.OBJ.UNSP@                                   V-III-alt ;
+  ! II-III class
+  @U.ARG.II-III@@U.OBJ.1SG@:@U.ARG.II-III@@U.OBJ.1SG@sa       V ;
+  @U.ARG.II-III@@U.OBJ.2SG@:@U.ARG.II-III@@U.OBJ.2SG@chi      V ;
+  @U.ARG.II-III@@U.OBJ.1PAUC@:@U.ARG.II-III@@U.OBJ.1PAUC@pi   V ;
+  @U.ARG.II-III@@U.OBJ.1MULT@:@U.ARG.II-III@@U.OBJ.1MULT@hapi V ;
+  @U.ARG.II-III@@U.OBJ.2PL@:@U.ARG.II-III@@U.OBJ.2PL@hachi    V ;
+  @U.ARG.II-III@@U.OBJ.UNSP@:@U.ARG.II-III@@U.OBJ.UNSP@       V ; 
+
+LEXICON V-III-alt
+  ! III-II verbs
+  @U.ARG.III-II@@U.SUBJ.1SG@:@U.ARG.III-II@@U.SUBJ.1SG@%{s%}a%{mN%}   V ;
+  @U.ARG.III-II@@U.SUBJ.2SG@:@U.ARG.III-II@@U.SUBJ.2SG@chi%{mN%}      V ;
+  @U.ARG.III-II@@U.SUBJ.1PAUC@:@U.ARG.III-II@@U.SUBJ.1PAUC@pi{mN%}    V ;
+  @U.ARG.III-II@@U.SUBJ.1MULT@:@U.ARG.III-II@@U.SUBJ.1MULT@hapi%{mN%} V ;
+  @U.ARG.III-II@@U.SUBJ.2PL@:@U.ARG.III-II@@U.SUBJ.2PL@hachi%{mN%}    V ;
+  @U.ARG.III-II@@U.SUBJ.UNSP@:@U.ARG.III-II@@U.SUBJ.UNSP@im           V ;
+  ! II-III verbs
+  @U.ARG.II-III@@U.OBJ.1SG@:@U.ARG.II-III@@U.OBJ.1SG@%{s%}a%{mN%}   V-II-alt ;
+  @U.ARG.II-III@@U.OBJ.2SG@:@U.ARG.II-III@@U.OBJ.2SG@chi%{mN%}      V-II-alt ;
+  @U.ARG.II-III@@U.OBJ.1PAUC@:@U.ARG.II-III@@U.OBJ.1PAUC@pi{mN%}    V-II-alt ;
+  @U.ARG.II-III@@U.OBJ.1MULT@:@U.ARG.II-III@@U.OBJ.1MULT@hapi%{mN%} V-II-alt ;
+  @U.ARG.II-III@@U.OBJ.2PL@:@U.ARG.II-III@@U.OBJ.2PL@hachi%{mN%}    V-II-alt ;
+  @U.ARG.II-III@@U.OBJ.UNSP@:@U.ARG.II-III@@U.OBJ.UNSP@im           V-II-alt ;
+
+! vim: set ft=xfst-lexc:

@@ -1,8 +1,21 @@
-!! Nouns
+!! NOUNS
 !  -----
-!! Nouns in the Choctaw language are things.
+!! Nouns in the Choctaw language are things. They also sometimes function as adjectives
 
-LEXICON Nouns
-noun    Cases   ;
+LEXICON N-II-preq
+ nakfish pre-dem ;
 
-! vim: set ft=xfst-lexc:
+LEXICON N-III-preq
+ oNshi    pre-dem ;
+ aalak    pre-dem ; ! sister's husband
+ aalakosi pre-dem ; ! wife's brother
+ anni'    pre-dem ; ! older brother (of a man), older sister (of a woman)
+ hokni'   pre-dem ; ! paternal aunt
+ ki'      pre-dem ; ! father
+
+LEXICON N-II-npreq
+ ani'     pre-dem ;
+
+LEXICON N-III-npreq
+ ahi'     pre-dem ;
+ kanoomi' pre-dem ; ! kinsman, relative

@@ -2,14 +2,26 @@
 !  -----
 !! Verbs in the Choctaw language are actions
 
-LEXICON V
+LEXICON V  ! stems, so they don't end in h
   taloowa V-I-II ;
   piNsah  V-I-II ; ! see
-  haNkloh V-I-II ; ! hear
-  hoNwah  V-I-II ; ! smell
-  kobaffih V-I-II ; ! break
-  akammih  V-I-II ; ! close
-  bakaffih V-I-II ; ! split (something) up
-  hofaNtichih V-I-II ; ! raise, rear
-  honnih      V-I-II ; ! boil (something)
-  hoppih      V-I-II ; ! bury
+  haNklo V-I-II ; ! hear
+  hoNwa  V-I-II ; ! smell
+  kobaffi V-I-II ; ! break
+  akammi  V-I-II ; ! close
+  bakaffi V-I-II ; ! split (something) up
+  hofaNtichi V-I-II ; ! raise, rear
+  honni      V-I-II ; ! boil (something)
+  hoppi      V-I-II ; ! bury
+  baliili V-Intrans-I ; ! run
+  niya    V-Intrans-II ; ! be-fat
+  yoppa   V-Intrans-II ; ! be-happy
+  ponna   V-Intrans-III ; ! be-skilled
+
+! IRREGULARS: shape aCV
+! initial 'a' drops following a prefix
+
+! IRREGULAR: banna = 'want'
+! ba- is deleted after a II prefix
+! regular form is also allowed
+! This only happens in Mississippi Choctaw

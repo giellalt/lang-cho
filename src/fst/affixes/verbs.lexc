@@ -25,6 +25,14 @@ LEXICON V-II-II ! Rare
 LEXICON V-III-II ! Incredibly rare (possibly only one verb, no more than 4)
   @U.ARG.III-II@ V-subj ;
 
+LEXICON V-Intrans-I
+  @U.TRANS.F@@U.ARG.I@ V-subj-intrans ;
+
+LEXICON V-Intrans-II
+  @U.TRANS.F@@U.ARG.II@ V-subj-intrans ;
+
+LEXICON V-Intrans-III
+  @U.TRANS.F@@U.ARG.III@ V-subj-intrans ;
 
 ! VERB TYPES: I,II (most common); I,III (pretty common);
 ! II,II; III,II; II,III (biggest of smaller three)
@@ -45,6 +53,17 @@ LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
   @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@ V-obj ;
   @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@ V-obj ;
   @U.SUBJ.NONE@+V:@U.SUBJ.NONE@ V-obj ;
+
+LEXICON V-subj-intrans
+  @U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I@li V-tense ;
+  @U.SUBJ.1SG@@D.ARG.I@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I@   V-tense ;
+  @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@                     V-tense ;
+  @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@                     V-tense ;
+  @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@               V-tense ;
+  @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@               V-tense ;
+  @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@                     V-tense ;
+  @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@                  V-tense ;
+  @U.SUBJ.NONE@+V:@U.SUBJ.NONE@                       V-tense ;
 
 LEXICON V-obj
   @U.OBJ.1SG@+1Sg:@U.OBJ.1SG@       V-dat ;

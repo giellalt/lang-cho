@@ -88,6 +88,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.ARG.II-III@ ! VERB TYPES
  @U.ARG.III-II@
 
+ @U.ARG.I@ @D.ARG.I@
+ @U.ARG.II@  ! INTRANSITIVE
+ @U.ARG.III@
+
+ @U.TRANS.F@ ! INTRANSITIVE
+
 !! Agreement prefixes/suffixes on verbs
  @U.SUBJ.1SG@ @U.SUBJ.2SG@ @U.SUBJ.1PL@ @U.SUBJ.1PAUC@ @U.SUBJ.1MULT@ @U.SUBJ.2PL@ @U.SUBJ.NONE@
  @U.OBJ.1SG@ @U.OBJ.2SG@ @U.OBJ.1PL@ @U.OBJ.1PAUC@ @U.OBJ.1MULT@ @U.OBJ.2PL@ @U.OBJ.NONE@
@@ -129,4 +135,4 @@ LEXICON Root
  @U.ARG.II-II@  V-II-alt  ;
  @U.ARG.II-III@ V-III-alt ;
  @U.ARG.III-II@ V-II-alt  ;
-
+ @U.TRANS.F@      V-Intrans ;

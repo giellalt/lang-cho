@@ -2,6 +2,27 @@
 !  --------
 !! Prefixes in the Choctaw language are bound to beginning of other words.
 
+LEXICON V-Intrans
+  @U.ARG.I@@U.SUBJ.1SG@                             V ;
+  @U.ARG.I@@U.SUBJ.2SG@:@U.ARG.I@@U.SUBJ.2SG@ish    V ;
+  @U.ARG.I@@U.SUBJ.1PL@:@U.ARG.I@@U.SUBJ.1PL@%{il%} V ; ! I-prefixes
+  @U.ARG.I@@U.SUBJ.2PL@:@U.ARG.I@@U.SUBJ.2PL@hash   V ;
+  @U.ARG.I@@U.SUBJ.UNSP@                            V ;
+
+  @U.ARG.II@@U.SUBJ.1SG@:@U.ARG.II@@U.SUBJ.1SG@sa   V ;
+  @U.ARG.II@@U.SUBJ.2SG@:@U.ARG.II@@U.SUBJ.2SG@chi      V ;
+  @U.ARG.II@@U.SUBJ.1PAUC@:@U.ARG.II@@U.SUBJ.1PAUC@pi   V ;
+  @U.ARG.II@@U.SUBJ.1MULT@:@U.ARG.II@@U.SUBJ.1MULT@hapi V ; ! II-prefixes
+  @U.ARG.II@@U.SUBJ.2PL@:@U.ARG.II@@U.SUBJ.2PL@hachi    V ;
+  @U.ARG.II@@U.SUBJ.UNSP@                               V ;
+
+  @U.ARG.III@@U.SUBJ.1SG@:@U.ARG.III@@U.SUBJ.1SG@%{s%}a%{mN%}   V ;
+  @U.ARG.III@@U.SUBJ.2SG@:@U.ARG.III@@U.SUBJ.2SG@chi%{mN%}      V ;
+  @U.ARG.III@@U.SUBJ.1PAUC@:@U.ARG.III@@U.SUBJ.1PAUC@pi{mN%}    V ;
+  @U.ARG.III@@U.SUBJ.1MULT@:@U.ARG.III@@U.SUBJ.1MULT@hapi%{mN%} V ; ! III-prefixes
+  @U.ARG.III@@U.SUBJ.2PL@:@U.ARG.III@@U.SUBJ.2PL@hachi%{mN%}    V ;
+  @U.ARG.III@@U.SUBJ.UNSP@:@U.ARG.III@@U.SUBJ.UNSP@im           V ;
+
 LEXICON V-I
   ! I-II and I-III class
   @U.SUBJ.1SG@                    V-III ;

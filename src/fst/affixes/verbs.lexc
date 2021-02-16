@@ -34,8 +34,10 @@ LEXICON V-III-II ! Incredibly rare (possibly only one verb, no more than 4)
   ! @D.CAUSE@ tense ;
 ! TODO--fix causative
 
-LEXICON V-subj
-  @U.SUBJ.1SG@+V+1Sg:@U.SUBJ.1SG@ V-obj ;
+LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
+  @U.SUBJ.1SG@@U.ARG.I-II@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-II@li V-obj ;
+  @U.SUBJ.1SG@@U.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-III@li V-obj ;
+  @U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@ V-obj ;
   @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@ V-obj ;
   @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@ V-obj ;
   @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@ V-obj ;

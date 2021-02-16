@@ -82,8 +82,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! VERBS
 !! Verb types
- @U.ARG.I-III@
- @U.ARG.I-II@
+ @U.ARG.I-III@ @D.ARG.I-III@
+ @U.ARG.I-II@ @D.ARG.I-II@
  @U.ARG.II-II@
  @U.ARG.II-III@ ! VERB TYPES
  @U.ARG.III-II@

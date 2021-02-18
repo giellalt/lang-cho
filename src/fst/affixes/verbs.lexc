@@ -87,9 +87,12 @@ LEXICON V-mod
   +Pot:^ahiNla V-tense ;
   0 V-tense ; ! realis
 
+! ahiina, ayna, aN = dialectical/idiolectical variants of ahiNla
+! sometimes ahii-h becomes ahii'
+
 LEXICON V-tense ! TODO: add complementizers
   +Tns:^h # ;
   +DPst:^ttook # ; ! distant past
-  +Pst:^tok # ;
+  +Pst:^to%{kp%} # ;
 ! TODO--other verb tenses
 

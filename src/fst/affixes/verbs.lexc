@@ -72,15 +72,24 @@ LEXICON V-obj
   @U.OBJ.UNSP@+Unsp:@U.OBJ.UNSP@    V-dat ;
 
 LEXICON V-dat
-  @U.DAT.1SG@+1Sg:@U.DAT.1SG@       V-tense ;
-  @U.DAT.2SG@+2Sg:@U.DAT.2SG@       V-tense ;
-  @U.DAT.1PAUC@+1Pauc:@U.DAT.1PAUC@ V-tense ;
-  @U.DAT.1MULT@+1Mult:@U.DAT.1MULT@ V-tense ;
-  @U.DAT.2PL@+2Pl:@U.DAT.2PL@       V-tense ;
-  @U.DAT.UNSP@+Unsp:@U.DAT.UNSP@    V-tense ;
-  @U.DAT.NONE@                      V-tense ;
+  @U.DAT.1SG@+1Sg:@U.DAT.1SG@       V-mod ;
+  @U.DAT.2SG@+2Sg:@U.DAT.2SG@       V-mod ;
+  @U.DAT.1PAUC@+1Pauc:@U.DAT.1PAUC@ V-mod ;
+  @U.DAT.1MULT@+1Mult:@U.DAT.1MULT@ V-mod ;
+  @U.DAT.2PL@+2Pl:@U.DAT.2PL@       V-mod ;
+  @U.DAT.UNSP@+Unsp:@U.DAT.UNSP@    V-mod ;
+  @U.DAT.NONE@                      V-mod ;
 
-LEXICON V-tense
+LEXICON V-mod
+  +Irr:^aachiN V-tense ; ! more often with affirm
+  +Irr:^ahii   V-tense ; ! more often with neg
+  +Pot:^aana   V-tense ;
+  +Pot:^ahiNla V-tense ;
+  0 V-tense ; ! realis
+
+LEXICON V-tense ! TODO: add complementizers
   +Tns:^h # ;
+  +DPst:^ttook # ; ! distant past
+  +Pst:^tok # ;
 ! TODO--other verb tenses
 

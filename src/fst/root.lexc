@@ -51,7 +51,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +Comp
 
 !! Verb person and tense markers
- +1Pauc +1Mult +Unsp +Tns +Part ! verb stuff
+ +1Pauc +1Mult +Unsp +Part ! verb stuff
+
+ +Tns +Pst +DPst
+ +Irr +Pot ! verb modals
 
 !!FLAG DIACRITICS
 !! Causative

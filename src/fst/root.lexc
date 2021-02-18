@@ -95,11 +95,13 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.TRANS.F@ ! INTRANSITIVE
 
 !! Agreement prefixes/suffixes on verbs
- @U.SUBJ.1SG@ @U.SUBJ.2SG@ @U.SUBJ.1PL@ @U.SUBJ.1PAUC@ @U.SUBJ.1MULT@ @U.SUBJ.2PL@ @U.SUBJ.NONE@
- @U.OBJ.1SG@ @U.OBJ.2SG@ @U.OBJ.1PL@ @U.OBJ.1PAUC@ @U.OBJ.1MULT@ @U.OBJ.2PL@ @U.OBJ.NONE@
- @U.DAT.1SG@ @U.DAT.2SG@ @U.DAT.1PL@ @U.DAT.1PAUC@ @U.DAT.1MULT@ @U.DAT.2PL@ @U.DAT.NONE@
- @U.SUBJ.UNSP@ @U.OBJ.UNSP@ @U.DAT.UNSP@
- @D.OBJ@ @R.OBJ@
+ @U.SUBJ.1SG@ @U.SUBJ.1PL@ @U.SUBJ.2SG@ @U.SUBJ.2PL@ @U.SUBJ.1MULT@ @U.SUBJ.1PAUC@ @U.SUBJ.UNSP@
+ @U.OBJ.1SG@ @U.OBJ.2SG@ @U.OBJ.UNSP@ @U.OBJ.1MULT@ @U.OBJ.1PAUC@ @U.OBJ.2PL@
+ @U.DAT.1SG@ @U.DAT.2SG@ @U.DAT.UNSP@ @U.DAT.1MULT@ @U.DAT.1PAUC@ @U.DAT.2PL@ @U.DAT.NONE@
+ @D.SUBJ.1SG@ @D.SUBJ.2SG@ @D.SUBJ.UNSP@ @D.SUBJ.1MULT@ @D.SUBJ.1PAUC@ @D.SUBJ.2PL@
+ @D.DAT.1SG@ @D.DAT.2SG@ @D.DAT.UNSP@ @D.DAT.1MULT@ @D.DAT.1PAUC@ @D.DAT.2PL@
+ @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @U.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
+
 
 !! Actual multicharacters
  ch ! post-alveolar affricate
@@ -130,9 +132,10 @@ LEXICON Root
  @U.PTYPE.III@  Pre-N-III ;
  @U.PTYPE.II@   N-III-npreq ;
  @U.PTYPE.III@  N-II-npreq  ;
- @U.ARG.I-II@   V-I   ;
- @U.ARG.I-III@  V-I   ;
- @U.ARG.II-II@  V-II-alt  ;
- @U.ARG.II-III@ V-III-alt ;
- @U.ARG.III-II@ V-II-alt  ;
- @U.TRANS.F@      V-Intrans ;
+
+ @U.ARG.I-II@   V-I-for-I-II       ;
+ @U.ARG.I-III@  V-I-for-I-III      ;
+ @U.ARG.II-II@  V-II-for-II-II-obj ;
+ @U.ARG.II-III@ V-III-for-II-II    ;
+ @U.ARG.III-II@ V-II-for-III-II    ;
+ @U.TRANS.F@    V-Intrans ;

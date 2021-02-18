@@ -38,13 +38,13 @@ LEXICON V-Intrans-III
 ! II,II; III,II; II,III (biggest of smaller three)
 
 ! LEXICON V-caus
-  ! @U.CAUS.T@+Caus:@U.CAUS.T@chi tense ;
+  ! @U.CAUS.T@+Caus:@U.CAUS.T@^chi tense ;
   ! @D.CAUSE@ tense ;
 ! TODO--fix causative
 
 LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
-  @U.SUBJ.1SG@@U.ARG.I-II@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-II@li V-obj ;
-  @U.SUBJ.1SG@@U.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-III@li V-obj ;
+  @U.SUBJ.1SG@@U.ARG.I-II@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-II@^li V-obj ;
+  @U.SUBJ.1SG@@U.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-III@^li V-obj ;
   @U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@ V-obj ;
   @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@ V-obj ;
   @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@ V-obj ;
@@ -52,10 +52,9 @@ LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
   @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@ V-obj ;
   @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@ V-obj ;
   @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@ V-obj ;
-  @U.SUBJ.NONE@+V:@U.SUBJ.NONE@ V-obj ;
 
 LEXICON V-subj-intrans
-  @U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I@li V-tense ;
+  @U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I@^li V-tense ;
   @U.SUBJ.1SG@@D.ARG.I@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I@   V-tense ;
   @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@                     V-tense ;
   @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@                     V-tense ;
@@ -63,22 +62,18 @@ LEXICON V-subj-intrans
   @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@               V-tense ;
   @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@                     V-tense ;
   @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@                  V-tense ;
-  @U.SUBJ.NONE@+V:@U.SUBJ.NONE@                       V-tense ;
 
 LEXICON V-obj
   @U.OBJ.1SG@+1Sg:@U.OBJ.1SG@       V-dat ;
   @U.OBJ.2SG@+2Sg:@U.OBJ.2SG@       V-dat ;
-  @U.OBJ.1PL@+1Pl:@U.OBJ.1PL@       V-dat ;
   @U.OBJ.1PAUC@+1Pauc:@U.OBJ.1PAUC@ V-dat ;
   @U.OBJ.1MULT@+1Mult:@U.OBJ.1MULT@ V-dat ;
   @U.OBJ.2PL@+2Pl:@U.OBJ.2PL@       V-dat ;
   @U.OBJ.UNSP@+Unsp:@U.OBJ.UNSP@    V-dat ;
-  @U.OBJ.NONE@                      V-dat ;
 
 LEXICON V-dat
   @U.DAT.1SG@+1Sg:@U.DAT.1SG@       V-tense ;
   @U.DAT.2SG@+2Sg:@U.DAT.2SG@       V-tense ;
-  @U.DAT.1PL@+1Pl:@U.DAT.1PL@       V-tense ;
   @U.DAT.1PAUC@+1Pauc:@U.DAT.1PAUC@ V-tense ;
   @U.DAT.1MULT@+1Mult:@U.DAT.1MULT@ V-tense ;
   @U.DAT.2PL@+2Pl:@U.DAT.2PL@       V-tense ;
@@ -86,6 +81,6 @@ LEXICON V-dat
   @U.DAT.NONE@                      V-tense ;
 
 LEXICON V-tense
-  +Tns:h # ;
+  +Tns:^h # ;
 ! TODO--other verb tenses
 

@@ -3,8 +3,8 @@
 !! The Choctaw language nouns inflect in cases.
 
 LEXICON pre-dem
- 0 N-dem ;
- 0 N-dem-clausal ;
+ +N N-dem ;
+ +N N-dem-clausal ;
 
 LEXICON N-poss
  @U.POSS.1SG@+Poss+1Sg:@U.POSS.1SG@ # ;

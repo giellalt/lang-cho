@@ -103,7 +103,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.DAT.1SG@ @U.DAT.2SG@ @U.DAT.UNSP@ @U.DAT.1MULT@ @U.DAT.1PAUC@ @U.DAT.2PL@ @U.DAT.NONE@
  @D.SUBJ.1SG@ @D.SUBJ.2SG@ @D.SUBJ.UNSP@ @D.SUBJ.1MULT@ @D.SUBJ.1PAUC@ @D.SUBJ.2PL@
  @D.DAT.1SG@ @D.DAT.2SG@ @D.DAT.UNSP@ @D.DAT.1MULT@ @D.DAT.1PAUC@ @D.DAT.2PL@
- @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @U.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
+ @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @D.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
 
 
 !! Actual multicharacters
@@ -126,7 +126,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  %{nom%} ! nominative and accusative suffixes--several forms
  %{acc%}
 
-
+! adding for compatibility, some may be removed later
++A +CLB +Ela +Err/Orth +Ess +Gen +Ill +Ine +LEFT +PUNCT +Pl +Prop
++RIGHT +Sg +Symbol +cmp +pos +sup
 
 !! LEXICON START
 LEXICON Root

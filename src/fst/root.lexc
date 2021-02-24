@@ -105,6 +105,28 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @D.DAT.1SG@ @D.DAT.2SG@ @D.DAT.UNSP@ @D.DAT.1MULT@ @D.DAT.1PAUC@ @D.DAT.2PL@
  @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @U.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
 
+!! TODO sort these:
++A
++Ela
++Err/Orth
++Ess
++Gen
++Ill
++Ine
++Pl
++Prop
++Sg
++cmp
++pos
++sup
+@D.OBJ.1MULT@
+
+!! Punctuation
++CLB
++PUNCT
++LEFT
++RIGHT
++Symbol
 
 !! Actual multicharacters
  ch ! post-alveolar affricate

@@ -161,6 +161,6 @@ LEXICON Root
  @U.ARG.I-II@   V-I-for-I-II       ;
  @U.ARG.I-III@  V-I-for-I-III      ;
  @U.ARG.II-II@  V-II-for-II-II-obj ;
- @U.ARG.II-III@ V-III-for-II-II    ;
+ @U.ARG.II-III@ V-III-for-II-III    ;
  @U.ARG.III-II@ V-II-for-III-II    ;
  @U.TRANS.F@    V-Intrans ;

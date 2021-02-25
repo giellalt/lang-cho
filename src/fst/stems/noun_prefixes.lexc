@@ -3,19 +3,19 @@
 !! Prefixes in the Choctaw language are bound to beginning of other words.
 
 LEXICON Pre-N-II
- @U.POSS.1SG@:@U.POSS.1SG@s%{ai%} N-II ;
- @U.POSS.2SG@:@U.POSS.2SG@chi     N-II ;
- @U.POSS.1PL@:@U.POSS.1PL@pi      N-II ;
- @U.POSS.2PL@:@U.POSS.2PL@hachi   N-II ;
+ @U.POSS.1SG@:@U.POSS.1SG@s%{ai%}^ N-II ;
+ @U.POSS.2SG@:@U.POSS.2SG@chi^     N-II ;
+ @U.POSS.1PL@:@U.POSS.1PL@pi^      N-II ;
+ @U.POSS.2PL@:@U.POSS.2PL@hachi^   N-II ;
  @U.POSS.3@                       N-II ; ! this form is null
  ! There may also be another distinction in the 1pl-- hapi(m)--not sure what it$
  ! Possibly paucal (pi) vs. plural (hapi)
 
 LEXICON Pre-N-III
- @U.POSS.1SG@:@U.POSS.1SG@a%{mN%}     N-III ;
- @U.POSS.2SG@:@U.POSS.2SG@chi%{mN%}   N-III ;
- @U.POSS.1PL@:@U.POSS.1PL@pi%{mN%}    N-III ;
- @U.POSS.2PL@:@U.POSS.2PL@hachi%{mN%} N-III ; ! I'm not certain this one's correct
+ @U.POSS.1SG@:@U.POSS.1SG@a%{mN%}^     N-III ;
+ @U.POSS.2SG@:@U.POSS.2SG@chi%{mN%}^   N-III ;
+ @U.POSS.1PL@:@U.POSS.1PL@pi%{mN%}^    N-III ;
+ @U.POSS.2PL@:@U.POSS.2PL@hachi%{mN%}^ N-III ; ! I'm not certain this one's correct
  @U.POSS.3@:@U.POSS.3@                N-III ;
 
 LEXICON N-II

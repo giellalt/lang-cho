@@ -3,30 +3,33 @@
 !! =================================== !
 
 Alphabet
- a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
- á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç
+ a b ch f h i k l lh m n o p s sh t w y %'
+ A B Ch F H I K L Lh M N O P S Sh T W Y
+ aa ii oo aN iN oN
+ Aa Ii Oo AN IN ON
 
- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
- Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
-
- %>:0 ;
+ %^:0
+ %{mN%}:m
+ %{ai%}:a
+ %{il%}:il
+ %{s%}:s
+ %{kp%}:k
+ %{a%}:a
+ %{k%}:k
+ %{nom%}:at
+ %{acc%}:aN
+;
 
 Sets
 
- Vow = a e i o u y æ ø å 
-       á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý ;
- Cns = b c d f g h j k l m n p q r s t v w x z ð þ ;
- 
+ Vow = a i o aa ii oo aN iN oN ;
+ LVow = aa ii oo aN iN oN ;
+ NVow = aN iN oN ;
+ NNVow = a i o aa ii oo ;
+ Cns = b ch f h k l lh m n p s sh t w y z %' ;
+ Case = %{nom%} %{acc%} ;
+
 Rules
 
-"Deleting stem-final s in s genitive"
- s:0 <=> Vow s %>: _ ;
-
-!!€ primus%>s
-!!€ primus00
-
-!!€grís%>s
-!!€grís00
-
-!!$grís%>s
-!!$grís0s
+"Glottal stop -> y before case endings"
+  %':y <=> _ %^: Case: ;

@@ -119,7 +119,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +cmp
 +pos
 +sup
-@D.OBJ.1MULT@
 
 !! Punctuation
 +CLB
@@ -155,8 +154,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! LEXICON START
 LEXICON Root
  @U.PTYPE.II@   Pre-N-II  ;
- @U.PTYPE.II@   Pre-N-II  ;
- @U.PTYPE.III@  Pre-N-III ;
  @U.PTYPE.III@  Pre-N-III ;
  @U.PTYPE.II@   N-III-npreq ;
  @U.PTYPE.III@  N-II-npreq  ;

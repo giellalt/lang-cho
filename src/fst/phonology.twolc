@@ -13,7 +13,7 @@ Alphabet
  %{ai%}:a
  %{il%}:il
  %{s%}:s
- %{kp%}:k
+ %{kp%}:k ! stands for k-past, used for the past tense
  %{a%}:a
  %{k%}:k
  %{nom%}:at
@@ -33,3 +33,15 @@ Rules
 
 "Glottal stop -> y before case endings"
   %':y <=> _ %^: Case: ;
+
+"il -> ii before a consonant"
+  %{il%}:ii <=> _ %^: Cns: ;
+
+"k -> 0 before another k in past tense"
+  %{kp%}:0 <=> _ %^: k: ;
+
+"m -> N in III prefixes before consonant"
+  %{mN%}:N <=> _ %^: Cns: ;
+
+"s -> 0 in sa- word initially"
+  %{s%}:0 <=> .#. _ ;

@@ -61,11 +61,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.CAUS.T@ @D.CAUS@
 
 !! Possessive prefixes
- @U.POSS.1SG@
- @U.POSS.2SG@
- @U.POSS.1PL@ ! Possessed by whom?
- @U.POSS.2PL@
- @U.POSS.3@
+ @U.POSS.1SG@ @R.POSS.1SG@
+ @U.POSS.2SG@ @R.POSS.2SG@
+ @U.POSS.1PL@ @R.POSS.1PL@! Possessed by whom?
+ @U.POSS.2PL@ @R.POSS.2PL@
+ @U.POSS.3@ @R.POSS.3@
  @D.POSS@ ! Unpossessed
 
 !! Which possessive prefixes are taken?

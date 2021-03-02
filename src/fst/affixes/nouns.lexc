@@ -7,11 +7,11 @@ LEXICON pre-dem
  +N:0 N-dem-clausal ;
 
 LEXICON N-poss
- @U.POSS.1SG@+Poss+1Sg:@U.POSS.1SG@ # ;
- @U.POSS.2SG@+Poss+2Sg:@U.POSS.2SG@ # ;
- @U.POSS.1PL@+Poss+1Pl:@U.POSS.1PL@ # ;
- @U.POSS.2PL@+Poss+2Pl:@U.POSS.2PL@ # ;
- @U.POSS.3@+Poss+3:@U.POSS.3@ # ;
+ @R.POSS.1SG@+Poss+1Sg:@R.POSS.1SG@ # ;
+ @R.POSS.2SG@+Poss+2Sg:@R.POSS.2SG@ # ;
+ @R.POSS.1PL@+Poss+1Pl:@R.POSS.1PL@ # ;
+ @R.POSS.2PL@+Poss+2Pl:@R.POSS.2PL@ # ;
+ @R.POSS.3@+Poss+3:@R.POSS.3@ # ;
  @D.POSS@ #;
 
 LEXICON N-case

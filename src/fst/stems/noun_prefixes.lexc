@@ -16,7 +16,7 @@ LEXICON Pre-N-III
  @U.POSS.2SG@:@U.POSS.2SG@chi%{mN%}^   N-III ;
  @U.POSS.1PL@:@U.POSS.1PL@pi%{mN%}^    N-III ;
  @U.POSS.2PL@:@U.POSS.2PL@hachi%{mN%}^ N-III ; ! I'm not certain this one's correct
- @U.POSS.3@:@U.POSS.3@                N-III ;
+ @U.POSS.3@:@U.POSS.3@i%{mN%}^         N-III ;
 
 LEXICON N-II
  0 N-II-preq ;

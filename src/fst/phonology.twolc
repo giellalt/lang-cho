@@ -3,7 +3,7 @@
 !! =================================== !
 
 Alphabet
- a b ch f h i k l lh m n o p s sh t w y %'
+ a b ch f h i k l lh m n o p s sh t w y %' `
  A B Ch F H I K L Lh M N O P S Sh T W Y
  aa ii oo aN iN oN
  Aa Ii Oo !AN IN ON
@@ -18,6 +18,14 @@ Alphabet
  %{k%}:k
  %{nom%}:at
  %{acc%}:aN
+
+! aspectual grades
+ %{ng%}:0
+ %{hng%}:0
+ %{lg%}:0
+ %{hg%}:0
+ %{gg%}:0
+ %{yg%}:0
 ;
 
 Sets
@@ -45,3 +53,4 @@ Rules
 
 "s -> 0 in sa- word initially"
   %{s%}:0 <=> .#. _ ;
+

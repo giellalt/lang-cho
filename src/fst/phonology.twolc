@@ -9,6 +9,8 @@ Alphabet
  Aa Ii Oo !AN IN ON
 
  %^:0
+ %$:0
+
  %{mN%}:m
  %{ai%}:a
  %{il%}:il
@@ -32,10 +34,11 @@ Sets
 
  Vow = a i o aa ii oo aN iN oN ;
  LVow = aa ii oo aN iN oN ;
- NVow = aN iN oN ;
+ NVow = aN iN oN aN iN oN;
  NNVow = a i o aa ii oo ;
  Cns = b ch f h k l lh m n p s sh t w y z %' ;
  Case = %{nom%} %{acc%} ;
+ Letter = Cns Vow;
 
 Rules
 
@@ -54,3 +57,17 @@ Rules
 "s -> 0 in sa- word initially"
   %{s%}:0 <=> .#. _ ;
 
+"Only one ` allowed"
+  `:0 <=> _ ?* `: ;
+
+"n-grade 1"
+  Vx:Vy <=> _ \Vow:* Vow: [\Vow: - %^:]* %^: ?* %{ng%}: ;
+           where Vx in NNVow
+                 Vy in NVow
+           matched ;
+
+"n-grade 2"
+  Cx:Cy <=> _ Vow: \Vow:* Vow: [\Vow: - %^:]* %^: ?* %{ng%}: ;
+           where Cx in (a aa aN b ch f h i ii iN k l lh m n o oo oN p s sh t w y ')
+                 Cy in (a` aa` aN` b` ch` f` h` i` ii` iN` k` l` lh` m` n` o` oo` oN` p` s` sh` t` w` y` '`)
+           matched ;

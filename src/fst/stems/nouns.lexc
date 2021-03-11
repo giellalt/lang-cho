@@ -8,7 +8,7 @@ LEXICON N-II-preq
 LEXICON N-III-preq
  oNshi'     pre-dem ;
  aalak      pre-dem ; ! sister's husband
- aalako`si' pre-dem ; ! wife's brother
+ aalak`osi' pre-dem ; ! wife's brother
  anni'      pre-dem ; ! older brother (of a man), older sister (of a woman)
  hokni'     pre-dem ; ! paternal aunt
  ki'        pre-dem ; ! father
@@ -19,7 +19,7 @@ LEXICON N-II-npreq
 
 LEXICON N-III-npreq
  noti'     pre-dem ; ! tooth
- kanoo`mi' pre-dem ; ! kinsman, relative
+ kan`oomi' pre-dem ; ! kinsman, relative
 
 !!€gt-desc: nouns
 !!€ hachimaalak: aalak+N+Poss+2Pl

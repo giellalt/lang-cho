@@ -3,20 +3,20 @@
 !! Verbs in the Choctaw language are actions
 
 LEXICON V  ! stems, so they don't end in h
-  taloo$wa V-I-II ; ! sign
-  p`iN$sah  V-I-II ; ! see
-  h`aN$klo V-I-II ; ! hear
-  h`oN$wa  V-I-II ; ! smell
-  koba$ffi V-I-II ; ! break
-  aka$mmi  V-I-II ; ! close
-  baka$ffi V-I-II ; ! split (something) up
-  hofaNti$chi V-I-II ; ! raise, rear
-  ho$nni      V-I-II ; ! boil (something)
-  ho$ppi      V-I-II ; ! bury
-  balii$li V-Intrans-I ; ! run
-  ni$ya    V-Intrans-II ; ! be-fat
-  yo$ppa   V-Intrans-II ; ! be-happy
-  po$nna   V-Intrans-III ; ! be-skilled
+  taloowa V-I-II ; ! sign
+  p`iNsah  V-I-II ; ! see
+  h`aNklo V-I-II ; ! hear
+  h`oNwa  V-I-II ; ! smell
+  kobaffi V-I-II ; ! break
+  akammi  V-I-II ; ! close
+  bakaffi V-I-II ; ! split (something) up
+  hofaNtichi V-I-II ; ! raise, rear
+  honni      V-I-II ; ! boil (something)
+  hoppi      V-I-II ; ! bury
+  baliili V-Intrans-I ; ! run
+  niya    V-Intrans-II ; ! be-fat
+  yoppa   V-Intrans-II ; ! be-happy
+  ponna   V-Intrans-III ; ! be-skilled
 
 ! IRREGULARS: shape aCV
 ! initial 'a' drops following a prefix

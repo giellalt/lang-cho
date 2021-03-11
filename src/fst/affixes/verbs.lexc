@@ -91,8 +91,16 @@ LEXICON V-mod
 ! sometimes ahii-h becomes ahii'
 
 LEXICON V-tense ! TODO: add complementizers
-  +Tns:^h # ;
-  +DPst:^ttook # ; ! distant past
-  +Pst:^to%{kp%} # ;
+  +Tns:^h        V-grade ;
+  +DPst:^ttook   V-grade ; ! distant past
+  +Pst:^to%{kp%} V-grade ;
 ! TODO--other verb tenses
 
+LEXICON V-grade
+  +NGrade:%{ng%}   # ;
+  +HNGrade:%{hng%} # ;
+  +LGrade:%{lg%}   # ;
+  +HGrade:%{hg%}   # ;
+  +GGrade:%{gg%}   # ;
+  +YGrade:%{yg%}   # ;
+  0 # ;

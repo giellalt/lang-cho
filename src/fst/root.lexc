@@ -44,6 +44,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! VERBS
 !! Not certain
  +Dat +Inst +Ben +Com +Sup +Loc +Abl ! These prefixes go on verbs, but they really describe nouns
++NGrade +LGrade +HGrade +HNGrade +GGrade +YGrade
 
 !! Causative and Question suffixes
  +Caus +Q ! Causative and question
@@ -146,6 +147,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  %{k%}
  %{nom%} ! nominative and accusative suffixes--several forms
  %{acc%}
+
+!! verb infix archiphonemes "grades"
+%{ng%} %{lg%} %{hg%} %{gg%} %{hng%} %{yg%} 
 
 ! adding for compatibility, some may be removed later
 +A +CLB +Ela +Err/Orth +Ess +Gen +Ill +Ine +LEFT +PUNCT +Pl +Prop

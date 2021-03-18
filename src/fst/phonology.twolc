@@ -5,11 +5,9 @@
 Alphabet
  a b ch f h i k l lh m n o p s sh t w y %' `
  A B Ch F H I K L Lh M N O P S Sh T W Y
- aa ii oo aN iN oN
- Aa Ii Oo !AN IN ON
 
  %^:0
- %$:0
+ %>:0
 
  %{mN%}:m
  %{ai%}:a
@@ -32,13 +30,16 @@ Alphabet
 
 Sets
 
- Vow = a i o aa ii oo aN iN oN ;
- LVow = aa ii oo aN iN oN ;
- NVow = aN iN oN aN iN oN;
- NNVow = a i o aa ii oo ;
+ Vow = a i o;
  Cns = b ch f h k l lh m n p s sh t w y z %' ;
+ NVow = Cns ` ;
  Case = %{nom%} %{acc%} ;
- Letter = Cns Vow;
+ Letter = Cns Vow ;
+ Grades =  %{ng%} %{hng%} %{lg%} %{hg%} %{gg%} %{yg%} ;
+
+ Definitions
+
+ Penultimate = NVow:* Vow: (Vow:) Cns:* %^: [\Grades: - %^:]* ;
 
 Rules
 
@@ -60,14 +61,46 @@ Rules
 "Only one ` allowed"
   `:0 <=> _ ?* `: ;
 
-"n-grade 1"
-  Vx:Vy <=> _ \Vow:* Vow: [\Vow: - %^:]* %^: ?* %{ng%}: ;
-           where Vx in NNVow
-                 Vy in NVow
-           matched ;
+"n/l/h/g-grade accent"
+  0:` <=> .#. \%^:* \:` _ (Vow:0) Vow: :N Penultimate %{ng%}: .#. ;
+          .#. \%^:* \:` _ Vow: :Vow Penultimate %{lg%}: .#. ;
+          .#. \%^:* \:` _ Vow: ([:Vow | :N]) Penultimate %{hg%}: .#. ; 
+          .#. \%^:* \:` _ Vow: ([:Vow | :N]) :NVow* Vow: ([:Vow | :N]) Penultimate %{gg%}: .#. ;
+          .#. \%^:* \:` _ 0:Vow 0:yy (:`) Vow: ([:Vow | :N]) Penultimate %{yg%}: .#. ;
+!          0:h _ 0:Vow 0:N Penultimate %{hng%}: .#. ;
 
-"n-grade 2"
-  Cx:Cy <=> _ Vow: \Vow:* Vow: [\Vow: - %^:]* %^: ?* %{ng%}: ;
-           where Cx in (a aa aN b ch f h i ii iN k l lh m n o oo oN p s sh t w y ')
-                 Cy in (a` aa` aN` b` ch` f` h` i` ii` iN` k` l` lh` m` n` o` oo` oN` p` s` sh` t` w` y` '`)
-           matched ;
+"n/hn-grade lengthening and nasalization"
+  0:N <=> .#. \%^:* :Vow _ Penultimate %{ng%}: .#. ;
+!         .#. \%^:*  0:h 0:` 0:Vow _ Penultimate %{hng%}: .#. ;
+
+!"hn-grade h insertion"
+! 0:h <=> .#. \%^:* :Vow _ 0:` 0:Vow 0:N Penultimate %{hng%}: .#. ;
+
+!"hn-grade vowel insertion"
+! 0:Vx <=> .#. \%^:* Vx: 0:h 0:` _ 0:N Penultimate %{hng%}: .#. ;
+!             where Vx in Vow ;   
+
+"hn-grade"
+ 0:Vx <=> .#. \%^:* Vy: _ Penultimate %{hng%}: .#. ;
+             where Vx in (h`aN h`iN h`oN)
+                   Vy in Vow
+             matched ;
+
+"orthographic fix for long + N"
+  Vx:0 <=> _ :Vx :N ;
+            where Vx in Vow ;
+
+"l/y-grade lengthening"
+  0:Vx <=> .#. \%^:* Vx _ Penultimate %{lg%}: .#. ;
+           .#. \%^:* \0:Vx _ 0:yy (:`) Vx: ([:Vx | :N]) Penultimate %{yg%}: .#. ;
+             where Vx in Vow ;
+
+"h-grade h-insertion"
+  0:h <=> .#. \%^:* 0:` Vow: ([:Vow | :N]) _ Penultimate %{hg%}: .#. ;
+
+"g-grade gemination"
+  0:Cx <=> .#. \%^:* \:Cx Cx:Cx _ Vow: ([:Vow | :N]) Penultimate %{gg%}: .#. ;
+           where Cx in Cns ;
+
+"y-grade yy insertion"
+  0:yy <=> .#. \%^:* \0:yy _ Vow: ([:Vow | :N]) Penultimate %{yg%}: .#. ;

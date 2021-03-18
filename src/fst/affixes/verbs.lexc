@@ -97,10 +97,10 @@ LEXICON V-tense ! TODO: add complementizers
 ! TODO--other verb tenses
 
 LEXICON V-grade
-  +NGrade:%{ng%}   # ;
-  +HNGrade:%{hng%} # ;
-  +LGrade:%{lg%}   # ;
-  +HGrade:%{hg%}   # ;
-  +GGrade:%{gg%}   # ;
-  +YGrade:%{yg%}   # ;
+  +NGrade:^%{ng%}   # ;
+  +HNGrade:^%{hng%} # ;
+  +LGrade:^%{lg%}   # ;
+  +HGrade:^%{hg%}   # ;
+  +GGrade:^%{gg%}   # ;
+  +YGrade:^%{yg%}   # ;
   0 # ;

@@ -3,25 +3,25 @@
 !! Prefixes in the Choctaw language are bound to beginning of other words.
 
 LEXICON V-Intrans
-  @U.ARG.I@@U.SUBJ.1SG@                              V ;
-  @U.ARG.I@@U.SUBJ.2SG@:@U.ARG.I@@U.SUBJ.2SG@ish%>    V ;
-  @U.ARG.I@@U.SUBJ.1PL@:@U.ARG.I@@U.SUBJ.1PL@%{il%}%> V ; ! I-prefixes
-  @U.ARG.I@@U.SUBJ.2PL@:@U.ARG.I@@U.SUBJ.2PL@hash%>   V ;
-  @U.ARG.I@@U.SUBJ.UNSP@                             V ;
+  @U.ARG.I@@U.SUBJ.1SG@                              Vb ;
+  @U.ARG.I@@U.SUBJ.2SG@:@U.ARG.I@@U.SUBJ.2SG@ish%>    Vb ;
+  @U.ARG.I@@U.SUBJ.1PL@:@U.ARG.I@@U.SUBJ.1PL@%{il%}%> Vb ; ! I-prefixes
+  @U.ARG.I@@U.SUBJ.2PL@:@U.ARG.I@@U.SUBJ.2PL@hash%>   Vb ;
+  @U.ARG.I@@U.SUBJ.UNSP@                             Vb ;
 
-  @U.ARG.II@@U.SUBJ.1SG@:@U.ARG.II@@U.SUBJ.1SG@sa%>       V ;
-  @U.ARG.II@@U.SUBJ.2SG@:@U.ARG.II@@U.SUBJ.2SG@chi%>      V ;
-  @U.ARG.II@@U.SUBJ.1PAUC@:@U.ARG.II@@U.SUBJ.1PAUC@pi%>   V ;
-  @U.ARG.II@@U.SUBJ.1MULT@:@U.ARG.II@@U.SUBJ.1MULT@hapi%> V ; ! II-prefixes
-  @U.ARG.II@@U.SUBJ.2PL@:@U.ARG.II@@U.SUBJ.2PL@hachi%>    V ;
-  @U.ARG.II@@U.SUBJ.UNSP@                                V ;
+  @U.ARG.II@@U.SUBJ.1SG@:@U.ARG.II@@U.SUBJ.1SG@sa%>       Vb ;
+  @U.ARG.II@@U.SUBJ.2SG@:@U.ARG.II@@U.SUBJ.2SG@chi%>      Vb ;
+  @U.ARG.II@@U.SUBJ.1PAUC@:@U.ARG.II@@U.SUBJ.1PAUC@pi%>   Vb ;
+  @U.ARG.II@@U.SUBJ.1MULT@:@U.ARG.II@@U.SUBJ.1MULT@hapi%> Vb ; ! II-prefixes
+  @U.ARG.II@@U.SUBJ.2PL@:@U.ARG.II@@U.SUBJ.2PL@hachi%>    Vb ;
+  @U.ARG.II@@U.SUBJ.UNSP@                                Vb ;
 
-  @U.ARG.III@@U.SUBJ.1SG@:@U.ARG.III@@U.SUBJ.1SG@%{s%}a%{mN%}%>   V ;
-  @U.ARG.III@@U.SUBJ.2SG@:@U.ARG.III@@U.SUBJ.2SG@chi%{mN%}%>      V ;
-  @U.ARG.III@@U.SUBJ.1PAUC@:@U.ARG.III@@U.SUBJ.1PAUC@pi{mN%}%>    V ;
-  @U.ARG.III@@U.SUBJ.1MULT@:@U.ARG.III@@U.SUBJ.1MULT@hapi%{mN%}%> V ; ! III-prefixes
-  @U.ARG.III@@U.SUBJ.2PL@:@U.ARG.III@@U.SUBJ.2PL@hachi%{mN%}%>    V ;
-  @U.ARG.III@@U.SUBJ.UNSP@:@U.ARG.III@@U.SUBJ.UNSP@im%>           V ;
+  @U.ARG.III@@U.SUBJ.1SG@:@U.ARG.III@@U.SUBJ.1SG@%{s%}a%{mN%}%>   Vb ;
+  @U.ARG.III@@U.SUBJ.2SG@:@U.ARG.III@@U.SUBJ.2SG@chi%{mN%}%>      Vb ;
+  @U.ARG.III@@U.SUBJ.1PAUC@:@U.ARG.III@@U.SUBJ.1PAUC@pi{mN%}%>    Vb ;
+  @U.ARG.III@@U.SUBJ.1MULT@:@U.ARG.III@@U.SUBJ.1MULT@hapi%{mN%}%> Vb ; ! III-prefixes
+  @U.ARG.III@@U.SUBJ.2PL@:@U.ARG.III@@U.SUBJ.2PL@hachi%{mN%}%>    Vb ;
+  @U.ARG.III@@U.SUBJ.UNSP@:@U.ARG.III@@U.SUBJ.UNSP@im%>           Vb ;
 
 LEXICON V-I-for-I-II
   @U.SUBJ.1SG@                     V-III-for-I-II ;
@@ -49,20 +49,20 @@ LEXICON V-III-for-I-II
   @U.DAT.NONE@                           V-II-for-I-II ;
 
 LEXICON V-III-for-I-III ! I think these verbs can't have a dative--not certain
-  @D.SUBJ.1SG@@U.OBJ.1SG@:@D.SUBJ.1SG@@U.OBJ.1SG@%{s%}a%{mN%}%>   V ;
-  @D.SUBJ.2SG@@U.OBJ.2SG@:@D.SUBJ.2SG@@U.OBJ.2SG@chi%{mN%}%>      V ;
-  @D.SUBJ.1PAUC@@U.OBJ.1PAUC@:@D.SUBJ.1PAUC@@U.OBJ.1PAUC@pi{mN%}%>    V ;
-  @D.SUBJ.1MULT@@U.OBJ.1MULT@:@D.SUBJ.1MULT@@U.OBJ.1MULT@hapi%{mN%}%> V ;
-  @D.SUBJ.2PL@@U.OBJ.2PL@:@D.SUBJ.2PL@@U.OBJ.2PL@hachi%{mN%}%>    V ;
-  @U.OBJ.UNSP@:@U.OBJ.UNSP@im%>           V ;
+  @D.SUBJ.1SG@@U.OBJ.1SG@:@D.SUBJ.1SG@@U.OBJ.1SG@%{s%}a%{mN%}%>   Vb ;
+  @D.SUBJ.2SG@@U.OBJ.2SG@:@D.SUBJ.2SG@@U.OBJ.2SG@chi%{mN%}%>      Vb ;
+  @D.SUBJ.1PAUC@@U.OBJ.1PAUC@:@D.SUBJ.1PAUC@@U.OBJ.1PAUC@pi{mN%}%>    Vb ;
+  @D.SUBJ.1MULT@@U.OBJ.1MULT@:@D.SUBJ.1MULT@@U.OBJ.1MULT@hapi%{mN%}%> Vb ;
+  @D.SUBJ.2PL@@U.OBJ.2PL@:@D.SUBJ.2PL@@U.OBJ.2PL@hachi%{mN%}%>    Vb ;
+  @U.OBJ.UNSP@:@U.OBJ.UNSP@im%>           Vb ;
 
 LEXICON V-II-for-I-II
-  @D.SUBJ.1SG@@D.DAT.1SG@@U.OBJ.1SG@:@D.SUBJ.1SG@@D.DAT.1SG@@U.OBJ.1SG@sa%>       V ;
-  @D.SUBJ.2SG@@D.DAT.2SG@@U.OBJ.2SG@:@D.SUBJ.2SG@@D.DAT.2SG@@U.OBJ.2SG@chi%>      V ;
-  @D.SUBJ.1PAUC@@D.DAT.1PAUC@@U.OBJ.1PAUC@:@D.SUBJ.1PAUC@@D.DAT.1PAUC@@U.OBJ.1PAUC@pi%>   V ;
-  @D.SUBJ.1MULT@@D.DAT.1MULT@@U.OBJ.1MULT@:@D.SUBJ.1MULT@@D.DAT.1MULT@@U.OBJ.1MULT@hapi%> V ;
-  @D.SUBJ.2PL@@D.DAT.2PL@@U.OBJ.2PL@:@D.SUBJ.2PL@@D.DAT.2PL@@U.OBJ.2PL@hachi%>    V ;
-  @U.OBJ.UNSP@                     V ;
+  @D.SUBJ.1SG@@D.DAT.1SG@@U.OBJ.1SG@:@D.SUBJ.1SG@@D.DAT.1SG@@U.OBJ.1SG@sa%>       Vb ;
+  @D.SUBJ.2SG@@D.DAT.2SG@@U.OBJ.2SG@:@D.SUBJ.2SG@@D.DAT.2SG@@U.OBJ.2SG@chi%>      Vb ;
+  @D.SUBJ.1PAUC@@D.DAT.1PAUC@@U.OBJ.1PAUC@:@D.SUBJ.1PAUC@@D.DAT.1PAUC@@U.OBJ.1PAUC@pi%>   Vb ;
+  @D.SUBJ.1MULT@@D.DAT.1MULT@@U.OBJ.1MULT@:@D.SUBJ.1MULT@@D.DAT.1MULT@@U.OBJ.1MULT@hapi%> Vb ;
+  @D.SUBJ.2PL@@D.DAT.2PL@@U.OBJ.2PL@:@D.SUBJ.2PL@@D.DAT.2PL@@U.OBJ.2PL@hachi%>    Vb ;
+  @U.OBJ.UNSP@                     Vb ;
   
 LEXICON V-II-for-II-II-obj
   ! II-II class
@@ -75,12 +75,12 @@ LEXICON V-II-for-II-II-obj
  
 LEXICON V-II-for-II-II-subj
  ! II-II class subjects
-  @D.OBJ.1SG@@U.SUBJ.1SG@:@D.OBJ.1SG@@U.SUBJ.1SG@sa%>       V ;
-  @D.OBJ.2SG@@U.SUBJ.2SG@:@D.OBJ.2SG@@U.SUBJ.2SG@chi%>      V ;
-  @D.OBJ.1PAUC@@U.SUBJ.1PAUC@:@D.OBJ.1PAUC@@U.SUBJ.1PAUC@pi%>   V ;
-  @D.OBJ.1MULT@@U.SUBJ.1MULT@:@D.OBJ.1MULT@@U.SUBJ.1MULT@hapi%> V ;
-  @D.OBJ.2PL@@U.SUBJ.2PL@:@D.OBJ.2PL@@U.SUBJ.2PL@hachi%>    V ;
-  @U.SUBJ.UNSP@                     V ;
+  @D.OBJ.1SG@@U.SUBJ.1SG@:@D.OBJ.1SG@@U.SUBJ.1SG@sa%>       Vb ;
+  @D.OBJ.2SG@@U.SUBJ.2SG@:@D.OBJ.2SG@@U.SUBJ.2SG@chi%>      Vb ;
+  @D.OBJ.1PAUC@@U.SUBJ.1PAUC@:@D.OBJ.1PAUC@@U.SUBJ.1PAUC@pi%>   Vb ;
+  @D.OBJ.1MULT@@U.SUBJ.1MULT@:@D.OBJ.1MULT@@U.SUBJ.1MULT@hapi%> Vb ;
+  @D.OBJ.2PL@@U.SUBJ.2PL@:@D.OBJ.2PL@@U.SUBJ.2PL@hachi%>    Vb ;
+  @U.SUBJ.UNSP@                     Vb ;
 
 LEXICON V-II-for-III-II
   ! III-II class, they don't like to have non-3 obj here
@@ -88,21 +88,21 @@ LEXICON V-II-for-III-II
 
 LEXICON V-II-for-II-III
   ! II-III class
-  @D.OBJ.1SG@@U.SUBJ.1SG@:@D.OBJ.1SG@@U.SUBJ.1SG@sa%>       V ;
-  @D.OBJ.2SG@@U.SUBJ.2SG@:@D.OBJ.2SG@@U.SUBJ.2SG@chi%>      V ;
-  @D.OBJ.1PAUC@@U.SUBJ.1PAUC@:@D.OBJ.1PAUC@@U.SUBJ.1PAUC@pi%>   V ;
-  @D.OBJ.1MULT@@U.SUBJ.1MULT@:@D.OBJ.1MULT@@U.SUBJ.1MULT@hapi%> V ;
-  @D.OBJ.2PL@@U.SUBJ.2PL@:@D.OBJ.2PL@@U.SUBJ.2PL@hachi%>    V ;
-  @U.SUBJ.2PL@        V ; 
+  @D.OBJ.1SG@@U.SUBJ.1SG@:@D.OBJ.1SG@@U.SUBJ.1SG@sa%>       Vb ;
+  @D.OBJ.2SG@@U.SUBJ.2SG@:@D.OBJ.2SG@@U.SUBJ.2SG@chi%>      Vb ;
+  @D.OBJ.1PAUC@@U.SUBJ.1PAUC@:@D.OBJ.1PAUC@@U.SUBJ.1PAUC@pi%>   Vb ;
+  @D.OBJ.1MULT@@U.SUBJ.1MULT@:@D.OBJ.1MULT@@U.SUBJ.1MULT@hapi%> Vb ;
+  @D.OBJ.2PL@@U.SUBJ.2PL@:@D.OBJ.2PL@@U.SUBJ.2PL@hachi%>    Vb ;
+  @U.SUBJ.2PL@        Vb ; 
 
 LEXICON V-III-for-III-II
   ! III-II verbs
-  @D.OBJ.1SG@@U.SUBJ.1SG@:@D.OBJ.1SG@@U.SUBJ.1SG@%{s%}a%{mN%}%>   V ;
-  @D.OBJ.2SG@@U.SUBJ.2SG@:@D.OBJ.2SG@@U.SUBJ.2SG@chi%{mN%}%>      V ;
-  @D.OBJ.1PAUC@@U.SUBJ.1PAUC@:@D.OBJ.1PAUC@@U.SUBJ.1PAUC@pi{mN%}%>    V ;
-  @D.OBJ.1MULT@@U.SUBJ.1MULT@:@D.OBJ.1MULT@@U.SUBJ.1MULT@hapi%{mN%}%> V ;
-  @D.OBJ.2PL@@U.SUBJ.2PL@:@D.OBJ.2PL@@U.SUBJ.2PL@hachi%{mN%}%>    V ;
-  @U.SUBJ.UNSP@:@U.SUBJ.UNSP@im%>           V ;
+  @D.OBJ.1SG@@U.SUBJ.1SG@:@D.OBJ.1SG@@U.SUBJ.1SG@%{s%}a%{mN%}%>   Vb ;
+  @D.OBJ.2SG@@U.SUBJ.2SG@:@D.OBJ.2SG@@U.SUBJ.2SG@chi%{mN%}%>      Vb ;
+  @D.OBJ.1PAUC@@U.SUBJ.1PAUC@:@D.OBJ.1PAUC@@U.SUBJ.1PAUC@pi{mN%}%>    Vb ;
+  @D.OBJ.1MULT@@U.SUBJ.1MULT@:@D.OBJ.1MULT@@U.SUBJ.1MULT@hapi%{mN%}%> Vb ;
+  @D.OBJ.2PL@@U.SUBJ.2PL@:@D.OBJ.2PL@@U.SUBJ.2PL@hachi%{mN%}%>    Vb ;
+  @U.SUBJ.UNSP@:@U.SUBJ.UNSP@im%>           Vb ;
 
 LEXICON V-III-for-II-III
   ! II-III verbs
@@ -112,5 +112,8 @@ LEXICON V-III-for-II-III
   @U.OBJ.1MULT@:@U.OBJ.1MULT@hapi%{mN%}%> V-II-for-II-III ;
   @U.OBJ.2PL@:@U.OBJ.2PL@hachi%{mN%}%>    V-II-for-II-III ;
   @U.OBJ.UNSP@:@U.OBJ.UNSP@im%>           V-II-for-II-III ;
+
+LEXICON Vb
+0:+ V ;
 
 ! vim: set ft=xfst-lexc:

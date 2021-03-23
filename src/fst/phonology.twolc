@@ -41,8 +41,9 @@ Sets
  Grade =  %{ng%} %{hng%} %{lg%} %{hg%} %{gg%} %{yg%} ;
 
  Definitions
-
- AnyVow = ([`: | :`]) :Vow ([:Vow | :N]) ;
+ 
+ VV = [Vow: | :Vow] ;
+ AnyVow = ([`: | :`]) VV ([VV | :N | N:]) ;
  Syllable = NVow:* AnyVow Cns:* ;
  Penultimate = NVow:* AnyVow Cns:* %^: [\Grade: - %^:]* ;
 
@@ -74,7 +75,7 @@ Rules
          where Vx in Vow ;
 
 "l-grade, g-grade vow"
- 0:Vx <=> %+:0 ?* \:Vx Vx: _ [\:Vx & :Vow] \:Vow* AnyVow \:Vow* %+:0 \Grade:* [%{lg%}: | %{gg%}:] .#. ;
+ 0:Vx <=> %+:0 ?* \:Vx Vx: _ [\:Vx &    :Vow] \:Vow* AnyVow \:Vow* %+:0 \Grade:* [%{lg%}: | %{gg%}:] .#. ;
           %+:0 ?* \:Vx Vx: _ :Cns \:Vow* AnyVow \:Vow* %+:0 \Grade:* [%{lg%}: | %{gg%}:] .#. ;
       where Vx in Vow ;
 
@@ -105,4 +106,7 @@ Rules
  Vow:0 <=> _ %+:0 \%+:* %{d%}:0 ;
 
 "Delete -i of -li when followed by a vowel"
- %{i%}:0 <=> _ (%^:) Vow: ;
+ %{i%}:0 <=> _ (%^:) :Vow ;
+
+"k deleted before another consonant"
+ %{k%}:0 <=> _ (%^:) Cns: ;

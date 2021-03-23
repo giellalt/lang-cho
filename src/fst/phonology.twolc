@@ -64,6 +64,9 @@ Rules
 "Only one ` allowed"
   `:0 <=> _ ?* :` ;
 
+
+! GRADES:
+! TODO: handle shift in pitch accent
 "n-grade"
  0:N <=> %+:0 ?* \:Vx :Vx _ \:N \:Vow* AnyVow \:Vow* %+:0 \Grade:* %{ng%}: .#. ;
          where Vx in Vow ;
@@ -87,7 +90,7 @@ Rules
       where Cx in Cns ;
 
 "y-grade"
- 0:Vx <=> %+:0 ?* Vy: ([:Vy | :N]) _ [:Cns* AnyVow | [\:Vy & Vow]] \:Vow* %+:0 \Grade:* %{hng%}: .#. ;
+ 0:Vx <=> %+:0 ?* Vy: ([:Vy | :N]) _ [:Cns* AnyVow | [\:Vy & Vow]] \:Vow* %+:0 \Grade:* %{yg%}: .#. ;
       where Vy in Vow
             Vx in (yya yyi yyo)
       matched ;

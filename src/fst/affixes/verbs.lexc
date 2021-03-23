@@ -43,8 +43,8 @@ LEXICON V-Intrans-III
 ! TODO--fix causative
 
 LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
-  @U.SUBJ.1SG@@U.ARG.I-II@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-II@^li V-obj ;
-  @U.SUBJ.1SG@@U.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-III@^li V-obj ;
+  @U.SUBJ.1SG@@U.ARG.I-II@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-II@^l%{i%} V-obj ;
+  @U.SUBJ.1SG@@U.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-III@^l%{i%} V-obj ;
   @U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@ V-obj ;
   @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@ V-obj ;
   @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@ V-obj ;
@@ -54,14 +54,15 @@ LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
   @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@ V-obj ;
 
 LEXICON V-subj-intrans
-  @U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I@^li V-tense ;
-  @U.SUBJ.1SG@@D.ARG.I@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I@   V-tense ;
-  @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@                     V-tense ;
-  @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@                     V-tense ;
-  @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@               V-tense ;
-  @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@               V-tense ;
-  @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@                     V-tense ;
-  @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@                  V-tense ;
+  @D.N@@U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@D.N@@U.SUBJ.1SG@@U.ARG.I@^l%{i%} Neg ;
+  @R.N.T@@U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@R.N.T@@U.SUBJ.1SG@@U.ARG.I@ Neg ;
+  @U.SUBJ.1SG@@D.ARG.I@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I@    Neg ;
+  @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@                      Neg ;
+  @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@                      Neg ;
+  @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@                Neg ;
+  @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@                Neg ;
+  @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@                      Neg ;
+  @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@                   Neg ;
 
 LEXICON V-obj
   @U.OBJ.1SG@+1Sg:@U.OBJ.1SG@       V-dat ;
@@ -72,13 +73,20 @@ LEXICON V-obj
   @U.OBJ.UNSP@+Unsp:@U.OBJ.UNSP@    V-dat ;
 
 LEXICON V-dat
-  @U.DAT.1SG@+1Sg:@U.DAT.1SG@       V-mod ;
-  @U.DAT.2SG@+2Sg:@U.DAT.2SG@       V-mod ;
-  @U.DAT.1PAUC@+1Pauc:@U.DAT.1PAUC@ V-mod ;
-  @U.DAT.1MULT@+1Mult:@U.DAT.1MULT@ V-mod ;
-  @U.DAT.2PL@+2Pl:@U.DAT.2PL@       V-mod ;
-  @U.DAT.UNSP@+Unsp:@U.DAT.UNSP@    V-mod ;
-  @U.DAT.NONE@                      V-mod ;
+  @U.DAT.1SG@+1Sg:@U.DAT.1SG@       Neg ;
+  @U.DAT.2SG@+2Sg:@U.DAT.2SG@       Neg ;
+  @U.DAT.1PAUC@+1Pauc:@U.DAT.1PAUC@ Neg ;
+  @U.DAT.1MULT@+1Mult:@U.DAT.1MULT@ Neg ;
+  @U.DAT.2PL@+2Pl:@U.DAT.2PL@       Neg ;
+  @U.DAT.UNSP@+Unsp:@U.DAT.UNSP@    Neg ;
+  @U.DAT.NONE@                      Neg ;
+
+LEXICON Neg
+  @P.NEG.T@@R.N.T@+Neg:@P.NEG.T@@R.N.T@%{d%}^o%{k%} V-mod ;
+  @P.NEG.T@@R.N.T@+Neg:@P.NEG.T@@R.N.T@%{d%}^okii   V-mod ;
+  @R.N.T@+Hort:@R.N.T@       V-mod ;
+  @D.N@                      V-mod ;
+
 
 LEXICON V-mod
   +Irr:^aachiN V-tense ; ! more often with affirm
@@ -96,11 +104,12 @@ LEXICON V-tense ! TODO: add complementizers
   +Pst:^to%{kp%} V-grade ;
 ! TODO--other verb tenses
 
+
 LEXICON V-grade
-  +NGrade:^%{ng%}   # ;
-  +HNGrade:^%{hng%} # ;
+  @D.NEG@+NGrade:@D.NEG@^%{ng%}   # ;
+  @D.NEG@+HNGrade:@D.NEG@^%{hng%} # ;
   +LGrade:^%{lg%}   # ;
-  +HGrade:^%{hg%}   # ;
-  +GGrade:^%{gg%}   # ;
-  +YGrade:^%{yg%}   # ;
-  0 # ;
+  @D.NEG@+HGrade:@D.NEG@^%{hg%}   # ;
+  @D.NEG@+GGrade:@D.NEG@^%{gg%}   # ;
+  @D.NEG@+YGrade:@D.NEG@^%{yg%}   # ;
+  @D.NEG@0 # ;

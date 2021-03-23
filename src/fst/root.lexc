@@ -44,8 +44,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! VERBS
 !! Not certain
  +Dat +Inst +Ben +Com +Sup +Loc +Abl ! These prefixes go on verbs, but they really describe nouns
-+NGrade +LGrade +HGrade +HNGrade +GGrade +YGrade
-
+ +NGrade +LGrade +HGrade +HNGrade +GGrade +YGrade
+ +Neg
 !! Causative and Question suffixes
  +Caus +Q ! Causative and question
 
@@ -105,7 +105,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @D.SUBJ.1SG@ @D.SUBJ.2SG@ @D.SUBJ.UNSP@ @D.SUBJ.1MULT@ @D.SUBJ.1PAUC@ @D.SUBJ.2PL@
  @D.DAT.1SG@ @D.DAT.2SG@ @D.DAT.UNSP@ @D.DAT.1MULT@ @D.DAT.1PAUC@ @D.DAT.2PL@
  @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @D.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
-
+ @P.N.T@ @R.N.T@ @D.N@ ! Does it use N-prefixes?
+ @P.NEG.T@ @D.NEG@ ! is it negative? (as opposed to hortative)
 !! TODO sort these:
 +A
 +Ela
@@ -141,12 +142,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  %{mN%} ! archiphoneme for III possessor prefixes
  %{il%}
  %{s%}
+ %{i%} ! part of I 1sg suffix
 
  %{kp%} ! for past tense
  %{a%}
  %{k%}
  %{nom%} ! nominative and accusative suffixes--several forms
  %{acc%}
+ %{d%} ! deletes previous vowel
 
 !! verb infix archiphonemes "grades"
 %{ng%} %{lg%} %{hg%} %{gg%} %{hng%} %{yg%} 
@@ -168,3 +171,4 @@ LEXICON Root
  @U.ARG.II-III@ V-III-for-II-III    ;
  @U.ARG.III-II@ V-II-for-III-II    ;
  @U.TRANS.F@    V-Intrans ;
+ @U.TRANS.F@@P.N.T@    N-Intrans ;

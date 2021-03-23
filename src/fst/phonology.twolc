@@ -9,7 +9,9 @@ Alphabet
  %^:0
  %>:0
  %+:0
-
+ 
+ %{i%}:i
+ %{d%}:0
  %{mN%}:m
  %{ai%}:a
  %{il%}:il
@@ -98,3 +100,9 @@ Rules
 "orthographic fix for long + N"
   Vx:0 <=> _ :Vx :N ;
             where Vx in Vow ;
+
+"Delete vowel before -ok suffix"
+ Vow:0 <=> _ %+:0 \%+:* %{d%}:0 ;
+
+"Delete -i of -li when followed by a vowel"
+ %{i%}:0 <=> _ (%^:) Vow: ;

@@ -84,7 +84,7 @@ LEXICON V-dat
 LEXICON Neg
   @P.NEG.T@@R.N.T@+Neg:@P.NEG.T@@R.N.T@%{d%}^o%{k%} V-mod ;
   @P.NEG.T@@R.N.T@+Neg:@P.NEG.T@@R.N.T@%{d%}^okii   V-mod ;
-  @R.N.T@+Hort:@R.N.T@       V-mod ;
+  @D.SUBJ.2SG@@D.SUBJ.2PL@@R.N.T@+Hort:@D.SUBJ.2SG@@D.SUBJ.2PL@@R.N.T@       V-mod ;
   @D.N@                      V-mod ;
 
 

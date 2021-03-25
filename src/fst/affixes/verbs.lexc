@@ -11,28 +11,28 @@
 ! Verb stems (may be moved)
 
 LEXICON V-I-II ! Most common
-  @U.ARG.I-II@:@U.ARG.I-II@+ V-subj ;
+  @U.S.I@@U.O.II@:@U.S.I@@U.O.II@+ V-subj ;
 
 LEXICON V-I-III ! Somewhat common
-  @U.ARG.I-III@:@U.ARG.I-III@+ V-subj ;
+  @U.S.I@@U.O.III@:@U.S.I@@U.O.III@+ V-subj ;
 
 LEXICON V-II-III ! Rare
-  @U.ARG.II-III@:@U.ARG.II-III@+ V-subj ;
+  @U.S.II@@U.O.III@:@U.S.II@@U.O.III@+ V-subj ;
 
 LEXICON V-II-II ! Rare
-  @U.ARG.II-II@:@U.ARG.II-II@+ V-subj ;
+  @U.S.II@@U.O.II@:@U.S.II@@U.O.II@+ V-subj ;
 
 LEXICON V-III-II ! Incredibly rare (possibly only one verb, no more than 4)
-  @U.ARG.III-II@:@U.ARG.III-II@+ V-subj ;
+  @U.S.III@@U.O.II@:@U.S.III@@U.O.II@+ V-subj ;
 
 LEXICON V-Intrans-I
-  @U.TRANS.F@@U.ARG.I@:@U.TRANS.F@@U.ARG.I@+ V-subj-intrans ;
+  @U.O.N@@U.S.I@:@U.O.N@@U.S.I@+ V-subj-intrans ;
 
 LEXICON V-Intrans-II
-  @U.TRANS.F@@U.ARG.II@:@U.TRANS.F@@U.ARG.II@+ V-subj-intrans ;
+  @U.O.N@@U.S.II@:@U.O.N@@U.S.II@+ V-subj-intrans ;
 
 LEXICON V-Intrans-III
-  @U.TRANS.F@@U.ARG.III@:@U.TRANS.F@@U.ARG.III@+ V-subj-intrans ;
+  @U.O.N@@U.S.III@:@U.O.N@@U.S.III@+ V-subj-intrans ;
 
 ! VERB TYPES: I,II (most common); I,III (pretty common);
 ! II,II; III,II; II,III (biggest of smaller three)
@@ -43,9 +43,7 @@ LEXICON V-Intrans-III
 ! TODO--fix causative
 
 LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
-  @U.SUBJ.1SG@@U.ARG.I-II@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-II@^l%{i%} V-obj ;
-  @U.SUBJ.1SG@@U.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@U.ARG.I-III@^l%{i%} V-obj ;
-  @U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I-II@@D.ARG.I-III@ V-obj ;
+  @U.SUBJ.1SG@@U.S.I@+V+1Sg:@U.SUBJ.1SG@@U.S.I@^l%{i%} V-obj ;
   @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@ V-obj ;
   @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@ V-obj ;
   @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@ V-obj ;
@@ -54,15 +52,15 @@ LEXICON V-subj  ! 1Sg-I is a suffix, others nothing
   @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@ V-obj ;
 
 LEXICON V-subj-intrans
-  @D.N@@U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@D.N@@U.SUBJ.1SG@@U.ARG.I@^l%{i%} Neg ;
-  @R.N.T@@U.SUBJ.1SG@@U.ARG.I@+V+1Sg:@R.N.T@@U.SUBJ.1SG@@U.ARG.I@ Neg ;
-  @U.SUBJ.1SG@@D.ARG.I@+V+1Sg:@U.SUBJ.1SG@@D.ARG.I@    Neg ;
-  @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@                      Neg ;
-  @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@                      Neg ;
-  @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@                Neg ;
-  @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@                Neg ;
-  @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@                      Neg ;
-  @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@                   Neg ;
+  @D.N@@U.SUBJ.1SG@@U.S.I@+V+1Sg:@D.N@@U.SUBJ.1SG@@U.ARG.I@^l%{i%} Neg ;
+  @R.N.T@@U.SUBJ.1SG@@U.S.I@+V+1Sg:@R.N.T@@U.SUBJ.1SG@@U.ARG.I@ Neg ;
+  @U.SUBJ.1SG@@D.S.I@+V+1Sg:@U.SUBJ.1SG@@D.S.I@ Neg ;
+  @U.SUBJ.2SG@+V+2Sg:@U.SUBJ.2SG@               Neg ;
+  @U.SUBJ.1PL@+V+1Pl:@U.SUBJ.1PL@               Neg ;
+  @U.SUBJ.1PAUC@+V+1Pauc:@U.SUBJ.1PAUC@         Neg ;
+  @U.SUBJ.1MULT@+V+1Mult:@U.SUBJ.1MULT@         Neg ;
+  @U.SUBJ.2PL@+V+2Pl:@U.SUBJ.2PL@               Neg ;
+  @U.SUBJ.UNSP@+V+Unsp:@U.SUBJ.UNSP@            Neg ;
 
 LEXICON V-obj
   @U.OBJ.1SG@+1Sg:@U.OBJ.1SG@       V-dat ;
@@ -79,7 +77,7 @@ LEXICON V-dat
   @U.DAT.1MULT@+1Mult:@U.DAT.1MULT@ Neg ;
   @U.DAT.2PL@+2Pl:@U.DAT.2PL@       Neg ;
   @U.DAT.UNSP@+Unsp:@U.DAT.UNSP@    Neg ;
-  @U.DAT.NONE@                      Neg ;
+  @U.DAT.N@                         Neg ;
 
 LEXICON Neg
   @P.NEG.T@@R.N.T@+Neg:@P.NEG.T@@R.N.T@%{d%}^o%{k%} V-mod ;

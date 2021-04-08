@@ -39,8 +39,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +Only +Only2 +Too2 +Must +Emph +Very +Prev
 
 !! Possessive prefixes
- +Poss +1Sg +1Pl +2Sg +2Pl +3
- 1Sg+ 1Pl+ 2Sg+ 2Pl+
+ Poss+ +1Sg +1Pl +2Sg +2Pl +3
+ 1Sg+ 1Pl+ 2Sg+ 2Pl+ 3+
 !! VERBS
 !! Not certain
  +Dat +Inst +Ben +Com +Sup +Loc +Abl ! These prefixes go on verbs, but they really describe nouns

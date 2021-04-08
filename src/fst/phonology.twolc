@@ -21,6 +21,7 @@ Alphabet
  %{k%}:k
  %{nom%}:at
  %{acc%}:aN
+ %{sh%}:sh
 
 ! aspectual grades
  %{ng%}:0
@@ -60,6 +61,9 @@ Rules
 
 "il -> ii before a consonant"
   %{il%}:ii <=> _ %^: Cns: ;
+
+"sh (prefix) -> s before s"
+  %{sh%}:s <=> _ %^: [%{s%}:s | s:s] a: ;
 
 "k -> 0 before another k in past tense"
   %{kp%}:0 <=> _ %^: k: ;

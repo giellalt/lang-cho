@@ -13,9 +13,9 @@ LEXICON Start
 
 LEXICON Subj-First
   @U.SUBJ.1SG@1Sg+:@U.SUBJ.1SG@                 Is-Trans ;
-  @U.SUBJ.2SG@2Sg+:@U.SUBJ.2SG@ish^             Is-Trans ;
+  @U.SUBJ.2SG@2Sg+:@U.SUBJ.2SG@i%{sh%}^             Is-Trans ;
   @U.SUBJ.1PL@1Pl+:@U.SUBJ.1PL@%{il%}^          Is-Trans ;
-  @U.SUBJ.2PL@2Pl+:@U.SUBJ.2PL@hash^            Is-Trans ;
+  @U.SUBJ.2PL@2Pl+:@U.SUBJ.2PL@ha%{sh%}^            Is-Trans ;
   @U.SUBJ.UNSP@Unsp+:@U.SUBJ.UNSP@                Is-Trans ;
 
 LEXICON Is-Trans

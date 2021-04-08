@@ -159,6 +159,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  %{s%}
  %{i%} ! part of I 1sg suffix
 
+ %{sh%}
  %{kp%} ! for past tense
  %{a%}
  %{k%}

@@ -40,12 +40,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! Possessive prefixes
  +Poss +1Sg +1Pl +2Sg +2Pl +3
-
+ 1Sg+ 1Pl+ 2Sg+ 2Pl+
 !! VERBS
 !! Not certain
  +Dat +Inst +Ben +Com +Sup +Loc +Abl ! These prefixes go on verbs, but they really describe nouns
+ Dat+ Inst+ Ben+ Com+ Sub+ Loc+ Abl+
  +NGrade +LGrade +HGrade +HNGrade +GGrade +YGrade
  +Neg
+ Neg+ Hort+
 !! Causative and Question suffixes
  +Caus +Q ! Causative and question
 
@@ -53,7 +55,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! Verb person and tense markers
  +1Pauc +1Mult +Unsp +Part ! verb stuff
-
+ 1Pauc+ 1Mult+ Unsp+
  +Tns +Pst +DPst
  +Irr +Pot ! verb modals
 
@@ -100,22 +102,25 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.TRANS.T@
 
  @U.O.I@
- @U.O.II@ @U.O.N@
+ @U.O.II@ @U.O.N@ @R.O.N@ @D.O.N@
  @U.O.III@
- @U.S.I@
+ @U.S.I@ @D.S.I@
  @U.S.II@
  @U.S.III@
 
 !! Agreement prefixes/suffixes on verbs
  @U.SUBJ.1SG@ @U.SUBJ.1PL@ @U.SUBJ.2SG@ @U.SUBJ.2PL@ @U.SUBJ.1MULT@ @U.SUBJ.1PAUC@ @U.SUBJ.UNSP@
  @U.OBJ.1SG@ @U.OBJ.2SG@ @U.OBJ.UNSP@ @U.OBJ.1MULT@ @U.OBJ.1PAUC@ @U.OBJ.2PL@
- @U.DAT.1SG@ @U.DAT.2SG@ @U.DAT.UNSP@ @U.DAT.1MULT@ @U.DAT.1PAUC@ @U.DAT.2PL@
  @D.SUBJ.1SG@ @D.SUBJ.2SG@ @D.SUBJ.UNSP@ @D.SUBJ.1MULT@ @D.SUBJ.1PAUC@ @D.SUBJ.2PL@
- @D.DAT.1SG@ @D.DAT.2SG@ @D.DAT.UNSP@ @D.DAT.1MULT@ @D.DAT.1PAUC@ @D.DAT.2PL@
  @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @D.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
  @P.N.T@ @R.N.T@ @D.N@ ! Does it use N-prefixes?
- @P.NEG.T@ @D.NEG@ ! is it negative? (as opposed to hortative)
+ @U.HORT.T@ @U.HORT.F@ ! is it negative? (as opposed to hortative)
+ @D.LREQ@ @R.LREQ.T@ @P.LREQ.T@
  @U.OBJ.REF@ @U.DAT.N@
+
+ @U.PRS.1SG@ @U.PRS.2SG@ @U.PRS.UNSP@ @U.PRS.1MULT@ @U.PRS.1PAUC@ @U.PRS.2PL@
+ @U.APPL.COM@ @U.APPL.BEN@ @U.APPL.ABL@ @U.APPL.DAT@ @U.APPL.LOC@ @U.APPL.SUP@
+ @U.APPL.N@ @D.APPL@ @R.APPL.DAT@
 
 !! TODO sort these:
 +A
@@ -175,17 +180,10 @@ LEXICON Root
  @U.PTYPE.II@   N-III-npreq ;
  @U.PTYPE.III@  N-II-npreq  ;
 
-! @U.ARG.I-II@   V-I-for-I-II       ;
-! @U.ARG.I-III@  V-I-for-I-III      ;
-! @U.ARG.II-II@  V-II-for-II-II-obj ;
-! @U.ARG.II-III@ V-III-for-II-III    ;
-! @U.ARG.III-II@ V-II-for-III-II    ;
-! @U.TRANS.F@    V-Intrans ;
-! @U.TRANS.F@@P.N.T@    N-Intrans ;
-
  @U.S.I@ Subj-First ;
- @U.S.I@@P.N.T@ N ;
+ @U.S.I@@P.N.T@@U.HORT.T@Hort+ N-pre ;
+ @U.S.I@@P.N.T@@U.HORT.F@Neg+ N-pre ;
  @U.S.II@ Obj-First ;
  @U.S.III@ Obj-First ;
- @U.O.N@@U.S.II@ Subj-Second ;
- @U.O.N@@U.S.III@ Subj-Second ;
+ @U.O.N@@U.S.II@ Is-N ;
+ @U.O.N@@U.S.III@ Is-N ;

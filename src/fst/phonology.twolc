@@ -7,6 +7,7 @@ Alphabet
  A B Ch F H I K L Lh M N O P S Sh T W Y
  aa ii oo
  aN iN oN
+
  %^:0
  %+:0
  
@@ -22,6 +23,7 @@ Alphabet
  %{nom%}:at
  %{acc%}:aN
  %{sh%}:sh
+ %{y%}:y
 
 ! aspectual grades
  %{ng%}:0
@@ -41,10 +43,12 @@ Sets
  NVow = aN iN oN ;
  AVow = Vow NVow ;
  Cns = b ch f h k l lh m n p s sh t w y %' ;
+ LCns = bb cch ff hh kk ll llh mm nn pp ss ssh tt ww yy %'%';
  NonVow = Cns ` ;
  Case = %{nom%} %{acc%} ;
  Letter = Cns Vow ;
  Grade =  %{ng%} %{hng%} %{lg%} %{hg%} %{gg%} %{yg%} ;
+ Bound = %^ %+ ;
 
  Definitions
  VV = [Vow: | :Vow] ;
@@ -57,19 +61,19 @@ Sets
 Rules
 
 "Glottal stop -> y before case endings"
-  %':y <=> _ %^: Case: ;
+  %':y <=> _ Bound:0* Case: ;
 
 "il -> ii before a consonant"
-  %{il%}:ii <=> _ %^: Cns: ;
+  %{il%}:ii <=> _ Bound:0* Cns: ;
 
 "sh (prefix) -> s before s"
-  %{sh%}:s <=> _ %^: [%{s%}:s | s:s] a: ;
+  %{sh%}:s <=> _ Bound:0* [%{s%}:s | s:s] a: ;
 
 "k -> 0 before another k in past tense"
-  %{kp%}:0 <=> _ %^: k: ;
+  %{kp%}:0 <=> _ Bound:0* k: ;
 
 "m -> N in III prefixes before consonant"
-  %{mN%}:N <=> _ %^: Cns: ;
+  %{mN%}:N <=> _ Bound:0* (%+:0) Cns: ;
 
 "s -> 0 in sa- word initially"
   %{s%}:0 <=> .#. _ ;
@@ -81,34 +85,36 @@ Rules
 ! GRADES:
 ! TODO: handle shift in pitch accent
 "n-grade"
- Vx:Vy <=> %+:0 ?* _ \:AVow* AnyVow \:AVow* %+:0 \Grade:* %{ng%}: .#. ;
+ Vx:Vy <=> %+:0 ?* _ :NonVow* AnyVow :NonVow* %+:0 \Grade:* %{ng%}: .#. ;
        where Vx in Vow
              Vy in NVowM
        matched ;
 
 "l-grade, g-grade vow"
- Vx:Vy <=> %+:0 ?* _ \:AVow* AnyVow \:AVow* %+:0 \Grade:* [%{lg%}: | %{gg%}:] .#. ;
+ Vx:Vy <=> %+:0 [?* - ?* Vx:Vy] (`:) _ :NonVow* AnyVow :NonVow* %+:0 \Grade:* [%{lg%}: | %{gg%}:] .#. ;
       where Vx in SVow 
             Vy in LVow
       matched ;
 
 "h-grade"
- 0:h <=> %+:0 ?* AVow: _ [\:AVow - :h]* AnyVow \:AVow* %+:0 \Grade:* %{hg%}: .#. ;
+ 0:h <=> %+:0 ?* AVow: _ [:NonVow - :h]* AnyVow :NonVow* %+:0 \Grade:* %{hg%}: .#. ;
 
 "hn-grade"
- 0:Vx <=> %+:0 ?* Vy: _ [\:AVow - 0:Vx]* AnyVow \:AVow* %+:0 \Grade:* %{hng%}: .#. ;
+ 0:Vx <=> %+:0 ?* Vy: _ NonVow:* AnyVow NonVow:* %+:0 \Grade:* %{hng%}: .#. ;
       where Vy in AVow
             Vx in (h`aN h`iN h`oN h`aN h`iN h`oN h`aN h`iN h`oN)
       matched ;
 
 "g-grade cons"
- 0:Cx <=> %+:0 [?* - ?* \Cx:] Cx:Cx _ AnyVow \AVow:* AnyVow \AVow:* %+:0 \Grade:* %{gg%}: .#. ; 
-      where Cx in Cns ;
+ Cx:Cy <=> %+:0 [?* - ?* \Cx:Cy] _ (`:) [Vow:Vow | SVow:LVow] :NonVow* AnyVow :NonVow* %+:0 \Grade:* %{gg%}: .#. ; 
+      where Cx in Cns 
+            Cy in (bb cch ff hh kk ll llh mm nn pp ss ssh tt ww yy %'%')
+      matched ;
 
 "y-grade"
- 0:Vx <=> %+:0 ?* Vy: _ \:AVow* AnyVow \:AVow* %+:0 \Grade:* %{yg%}: .#. ;
-      where Vy in AVow
-            Vx in (yya yyi yyo yya yyi yyo yya yyi yyo)
+ 0:Vy <=> %+:0 [?* - ?* 0:Vy] _ Vx:Vx :NonVow* AnyVow :NonVow* %+:0 \Grade:* %{yg%}: .#. ;
+      where Vx in AVow
+            Vy in (ayy iyy oyy ayy iyy oyy ayy iyy oyy)
       matched ;
 
 "orthographic fix for long + N" ! I think this won't work
@@ -116,10 +122,14 @@ Rules
             where Vx in LVow ;
 
 "Delete vowel before -ok suffix"
- Vow:0 <=> _ %+:0 \%+:* %{d%}:0 ;
+ Vx:0 <=> _ [ %^:0* %+:0 %^:0*] \%+:0* %{d%}:0 ;
+          where Vx in AVow ;
 
 "Delete -i of -li when followed by a vowel"
- %{i%}:0 <=> _ (%^:) :Vow ;
+ %{i%}:0 <=> _ Bound:0* :Vow ;
 
 "k deleted before another consonant"
- %{k%}:0 <=> _ (%^:) Cns: ;
+ %{k%}:0 <=> _ Bound:0* Cns: ;
+
+"epenthetic y in locative suffix"
+ %{y%}:0 <=> _ Bound:0* Cns: ;

@@ -55,21 +55,65 @@ LEXICON Neg
 
 
 LEXICON V-mod
-  +Irr:^aachiN  V-tense ; ! more often with affirm
-  +Irr:^ahii   V-tense ; ! more often with neg
-  +Pot:^aana   V-tense ;
-  +Pot:^ahiNla V-tense ;
-  V-tense ; ! realis
+  +Irr:^aachiN  Neg2 ; ! more often with affirm
+  +Irr:^ahii   Neg2 ; ! more often with neg
+  +Pot:^aana   Neg2 ;
+  +Pot:^ahiNla Neg2 ;
+  @P.REAL.T@ V-tense ; ! realis
+
+LEXICON Neg2
+  @D.N@+Neg:@D.N@^kiiyo V-tense ; ! TODO: set negative to true
+  V-tense ; non-negative, or internally negated
 
 ! ahiina, ayna, aN = dialectical/idiolectical variants of ahiNla
 ! sometimes ahii-h becomes ahii'
 
 LEXICON V-tense ! TODO: add complementizers
-  +Tns:^h        V-grade ;
-  +DPst:^ttook   V-grade ; ! distant past
-  +Pst:^to%{kp%} V-grade ;
+  @P.H.T@+Tns:@P.H.T@^h        EIF ;
+  @P.K.T@+Tns2:@P.K.T@^k EIF ;
+  +DPst:^ttook   EIF ; ! distant past
+  +Pst:^to%{kp%} EIF ;
+  +Cert:^hli V-grade ; ! certainty
+  +Cert:^hlik V-grade ;
+  +Cert:^hnik V-grade ;
+  +Part:^t # ; ! participial marker
 ! TODO--other verb tenses
 
+LEXICON EIF ! TODO: constrain: can't precede a negative
+  @R.K.T@+Cert:@R.K.T@^aamo V-grade ;
+  @R.K.T@+Cert:@R.K.T@^hchaamo V-grade ;
+  +Prob:^a V-grade ; ! probably, I guess
+  +Doubt:^ba V-grade ; ! I doubt
+  +Wonder:^chi V-grade ; ! I wonder, I'm not sure if
+  +Wonder:^chichook V-grade ; ! I wonder, I'm not sure if
+  +Untrue:^chiit V-grade ; ! I think it's false that... He's not ?? is he??
+  +Suppose:^chiichi V-grade ; ! I suppose, lack of commitment
+  +Suppose:^chiichik V-grade ; ! ^^^
+  +Unknown:^chihba V-grade ; ! I don't know if...
+  +Unknown:^chishba V-grade ; ! ^^^
+  +Guess:^kaNsha V-grade ; ! I guess
+  +Affirm:^k`a V-grade ; ! I'm telling you! (Japanese -yo)
+  +Affirm:^kat V-grade ;
+  +Affirm:^kato V-grade ;
+  +Emph:^kiaN V-grade ; ! emphatic
+  +Warn:^taN V-grade ; ! warning
+  +Indeed:^okii V-grade ; ! emphatic, indeed, often pronounced "okee"
+  +Exhort:^ashkii V-grade ; ! exhortation
+  +Q:^oN V-grade ;
+  @R.H.T@+Q:@R.H.T@^aN V-grade ;
+  @R.REAL.T@+Q:@R.REAL.T@^ka' V-grade ;
+  +Q:^fo V-grade ;
+  +Q2:^cho V-grade ;
+  +Insult:^mat V-grade ;
+  @P.LREQ.T@+Insult:@P.LREQ.T@^cha V-grade ;
+  +Exclaim:^kat V-grade ;
+  +Exclaim:^kato V-grade ;
+  @U.SUBJ.IMP@+Imp:@U.SUBJ.IMP@cha V-grade ;
+  @U.SUBJ.IMP@+Imp:@U.SUBJ.IMP@^oo V-grade ;
+  @U.SUBJ.IMP@+Imp:@U.SUBJ.IMP@ V-grade ;
+  @U.SUBJ.2SG@+Prohib:@U.SUBJ.2SG@nn`a V-grade ;
+  @U.SUBJ.2PL@+Prohib:@U.SUBJ.2PL@nn`a V-grade ;
+  V-grade ; ! nothing
 
 LEXICON V-grade
   @D.LREQ@+NGrade:@D.LREQ@^%{ng%}   # ;

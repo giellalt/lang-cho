@@ -59,6 +59,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +Tns +Pst +DPst
  +Irr +Pot ! verb modals
 
+!! Verb Evidentials and IF markers
+ +Cert +Prob +Doubt +Wonder +Untrue +Suppose +Unknown +Guess +Affirm +Emph +Warn +Indeed +Exhort
+ +Q +Q2 +Insult +Exclaim +Imp +Prohib
+
 !!FLAG DIACRITICS
 !! Causative
  @U.CAUS.T@ @D.CAUS@
@@ -109,7 +113,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.S.III@
 
 !! Agreement prefixes/suffixes on verbs
- @U.SUBJ.1SG@ @U.SUBJ.1PL@ @U.SUBJ.2SG@ @U.SUBJ.2PL@ @U.SUBJ.1MULT@ @U.SUBJ.1PAUC@ @U.SUBJ.UNSP@
+ @U.SUBJ.1SG@ @U.SUBJ.1PL@ @U.SUBJ.2SG@ @U.SUBJ.2PL@ @U.SUBJ.1MULT@ @U.SUBJ.1PAUC@ @U.SUBJ.UNSP@ @U.SUBJ.IMP@
  @U.OBJ.1SG@ @U.OBJ.2SG@ @U.OBJ.UNSP@ @U.OBJ.1MULT@ @U.OBJ.1PAUC@ @U.OBJ.2PL@
  @D.SUBJ.1SG@ @D.SUBJ.2SG@ @D.SUBJ.UNSP@ @D.SUBJ.1MULT@ @D.SUBJ.1PAUC@ @D.SUBJ.2PL@
  @D.OBJ.1SG@ @D.OBJ.2SG@ @D.OBJ.UNSP@ @D.OBJ.1MULT@ @D.OBJ.1PAUC@ @D.OBJ.2PL@
@@ -121,6 +125,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.PRS.1SG@ @U.PRS.2SG@ @U.PRS.UNSP@ @U.PRS.1MULT@ @U.PRS.1PAUC@ @U.PRS.2PL@
  @U.APPL.COM@ @U.APPL.BEN@ @U.APPL.ABL@ @U.APPL.DAT@ @U.APPL.LOC@ @U.APPL.SUP@
  @U.APPL.N@ @D.APPL@ @R.APPL.DAT@
+
+ @P.H.T@ @R.H.T@
+ @P.K.T@ @R.K.T@
+ @P.REAL.T@ @R.REAL.T@
 
 !! TODO sort these:
 +A
@@ -158,6 +166,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  %{il%}
  %{s%}
  %{i%} ! part of I 1sg suffix
+ %{y%}
 
  %{sh%}
  %{kp%} ! for past tense
@@ -182,8 +191,8 @@ LEXICON Root
  @U.PTYPE.III@  N-II-npreq  ;
 
  @U.S.I@ Subj-First ;
- @U.S.I@@P.N.T@@U.HORT.T@Hort+ N-pre ;
- @U.S.I@@P.N.T@@U.HORT.F@Neg+ N-pre ;
+ @U.S.I@@P.N.T@@U.HORT.T@Hort+:@U.S.I@@P.N.T@@U.HORT.T@H N-pre ;
+ @U.S.I@@P.N.T@@U.HORT.F@Neg+:@U.S.I@@P.N.T@@U.HORT.F@ N-pre ;
  @U.S.II@ Obj-First ;
  @U.S.III@ Obj-First ;
  @U.O.N@@U.S.II@ Is-N ;

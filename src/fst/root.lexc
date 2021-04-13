@@ -48,6 +48,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +NGrade +LGrade +HGrade +HNGrade +GGrade +YGrade
  +Neg
  Neg+ Hort+
+ Refl+
 !! Causative and Question suffixes
  +Caus +Q ! Causative and question
 

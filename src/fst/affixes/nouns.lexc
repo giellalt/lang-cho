@@ -58,7 +58,7 @@ LEXICON N-tpart
 LEXICON N-prev
  +Nom:^oosh # ;
  +Acc:^oN   # ;
- N-poss ;
+ # ;
 
 LEXICON N-det2
  +Con:^akoo N-case ;

@@ -63,7 +63,7 @@ LEXICON V-mod
 
 LEXICON Neg2
   @D.N@+Neg:@D.N@^kiiyo V-tense ; ! TODO: set negative to true
-  V-tense ; non-negative, or internally negated
+  V-tense ; ! non-negative, or internally negated
 
 ! ahiina, ayna, aN = dialectical/idiolectical variants of ahiNla
 ! sometimes ahii-h becomes ahii'

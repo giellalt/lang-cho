@@ -96,6 +96,12 @@ Rules
             Vy in LVow
       matched ;
 
+"g-grade cons"
+ Cx:Cy <=> %+:0 [?* - ?* Cx:Cy] _ (`:) [Vow:Vow | SVow:LVow] :NonVow* AnyVow :NonVow* %+:0 \Grade:* %{gg%}: .#. ; 
+      where Cx in Cns 
+            Cy in (bb cch ff hh kk ll llh mm nn pp ss ssh tt ww yy %'%')
+      matched ;
+
 "h-grade"
  0:h <=> %+:0 ?* AVow: _ [:NonVow - :h]* AnyVow :NonVow* %+:0 \Grade:* %{hg%}: .#. ;
 
@@ -103,12 +109,6 @@ Rules
  0:Vx <=> %+:0 ?* Vy: _ NonVow:* AnyVow NonVow:* %+:0 \Grade:* %{hng%}: .#. ;
       where Vy in AVow
             Vx in (h`aN h`iN h`oN h`aN h`iN h`oN h`aN h`iN h`oN)
-      matched ;
-
-"g-grade cons"
- Cx:Cy <=> %+:0 [?* - ?* \Cx:Cy] _ (`:) [Vow:Vow | SVow:LVow] :NonVow* AnyVow :NonVow* %+:0 \Grade:* %{gg%}: .#. ; 
-      where Cx in Cns 
-            Cy in (bb cch ff hh kk ll llh mm nn pp ss ssh tt ww yy %'%')
       matched ;
 
 "y-grade"
@@ -133,3 +133,6 @@ Rules
 
 "epenthetic y in locative suffix"
  %{y%}:0 <=> _ Bound:0* Cns: ;
+
+"Delete ' before another consonant"
+ %':0 <=> _ Bound:0* Cns: ;

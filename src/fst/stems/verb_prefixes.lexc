@@ -18,8 +18,8 @@ LEXICON Subj-First
   @U.SUBJ.1PL@1Pl+:@U.SUBJ.1PL@%{il%}^          Is-Trans ;
   @U.SUBJ.2PL@2Pl+:@U.SUBJ.2PL@ha%{sh%}^            Is-Trans ;
   @U.SUBJ.UNSP@Unsp+:@U.SUBJ.UNSP@                Is-Trans ;
-  @U.SUBJ.IMP@2Sg+:@U.SUBJ.IMP@ Is-Trans ;
-  @U.SUBJ.IMP@2Pl+:@U.SUBJ.IMP@%{oh%} Is-Trans ;
+  @U.SUBJ.IMP@Imp+2Sg+:@U.SUBJ.IMP@ Is-Trans ;
+  @U.SUBJ.IMP@Imp+2Pl+:@U.SUBJ.IMP@%{oh%} Is-Trans ;
 
 LEXICON Is-Trans
   Obj-Second ;
@@ -58,22 +58,22 @@ LEXICON Obj-Second
 !reciprocal
 
 LEXICON Obj-First
-  @U.O.II@@U.OBJ.1SG@:@U.O.II@@U.OBJ.1SG@sa^       Is-N ;
-  @U.O.II@@U.OBJ.2SG@:@U.O.II@@U.OBJ.2SG@chi^      Is-N ;
-  @U.O.II@@U.OBJ.1PAUC@:@U.O.II@@U.OBJ.1PAUC@pi^   Is-N ;
-  @U.O.II@@U.OBJ.1MULT@:@U.O.II@@U.OBJ.1MULT@hapi^ Is-N ;
-  @U.O.II@@U.OBJ.2PL@:@U.O.II@U.OBJ.2PL@hachi^     Is-N ;
-  @U.O.II@@U.OBJ.UNSP@ Is-N ;
+  @U.O.II@@U.OBJ.1SG@1Sg+:@U.O.II@@U.OBJ.1SG@sa^       Is-N ;
+  @U.O.II@@U.OBJ.2SG@2Sg+:@U.O.II@@U.OBJ.2SG@chi^      Is-N ;
+  @U.O.II@@U.OBJ.1PAUC@1Pauc+:@U.O.II@@U.OBJ.1PAUC@pi^   Is-N ;
+  @U.O.II@@U.OBJ.1MULT@1Mult+:@U.O.II@@U.OBJ.1MULT@hapi^ Is-N ;
+  @U.O.II@@U.OBJ.2PL@2Pl+:@U.O.II@U.OBJ.2PL@hachi^     Is-N ;
+  @U.O.II@@U.OBJ.UNSP@Unsp+:@U.O.II@@U.OBJ.UNSP@ Is-N ;
 
-  @U.O.III@@U.OBJ.1SG@:@U.O.III@@U.OBJ.1SG@%{s%}a%{mN%}^   Is-N ;
-  @U.O.III@@U.OBJ.2SG@:@U.O.III@@U.OBJ.2SG@chi%{mN%}^      Is-N ;
-  @U.O.III@@U.OBJ.1PAUC@:@U.O.III@@U.OBJ.1PAUC@pi%{mN%}^   Is-N ;
-  @U.O.III@@U.OBJ.1MULT@:@U.O.III@@U.OBJ.1MULT@hapi%{mN%}^ Is-N ;
-  @U.O.III@@U.OBJ.2PL@:@U.O.III@@U.OBJ.2PL@hachi%{mN%}^    Is-N ;
-  @U.O.III@@U.OBJ.UNSP@:@U.O.III@@U.OBJ.UNSP@i%{mN%}^      Is-N ;
+  @U.O.III@@U.OBJ.1SG@1Sg+:@U.O.III@@U.OBJ.1SG@%{s%}a%{mN%}^   Is-N ;
+  @U.O.III@@U.OBJ.2SG@2Sg+:@U.O.III@@U.OBJ.2SG@chi%{mN%}^      Is-N ;
+  @U.O.III@@U.OBJ.1PAUC@1Pauc+:@U.O.III@@U.OBJ.1PAUC@pi%{mN%}^   Is-N ;
+  @U.O.III@@U.OBJ.1MULT@1Mult+:@U.O.III@@U.OBJ.1MULT@hapi%{mN%}^ Is-N ;
+  @U.O.III@@U.OBJ.2PL@2Pl+:@U.O.III@@U.OBJ.2PL@hachi%{mN%}^    Is-N ;
+  @U.O.III@@U.OBJ.UNSP@Unsp+:@U.O.III@@U.OBJ.UNSP@i%{mN%}^      Is-N ;
 
-  @U.O.III@@U.OBJ.REF@:@U.O.III@@U.OBJ.REF@ili^ Is-N ; 
-  @U.O.II@@U.OBJ.REF@:@U.O.II@@U.OBJ.REF@ili^   Is-N ;
+  @U.O.III@@U.OBJ.REF@Refl+:@U.O.III@@U.OBJ.REF@ili^ Is-N ; 
+  @U.O.II@@U.OBJ.REF@Refl+:@U.O.II@@U.OBJ.REF@ili^   Is-N ;
 
 LEXICON Is-N
   @U.HORT.T@@P.N.T@Hort+:@U.HORT.T@@P.N.T@ N-pre ;
@@ -86,7 +86,7 @@ LEXICON Subj-Sec
   @U.S.II@@D.OBJ.1PAUC@1Pauc+:@U.S.II@@D.OBJ.1PAUC@pi^ Appl ;
   @U.S.II@@D.OBJ.1MULT@1Mult+:@U.S.II@@D.OBJ.1MULT@hapi^ Appl ;
   @U.S.II@@D.OBJ.2PL@2Pl+:@U.S.II@@D.OBJ.2PL@hachi^ Appl ;
-  @U.S.II@Unsp+ Appl ;
+  @U.S.II@Unsp+:@U.S.II@ Appl ;
 
   @U.S.III@@D.OBJ.1SG@1Sg+:@U.S.III@@D.OBJ.1SG@%{s%}a%{mN%}^ Appl ;
   @U.S.III@@D.OBJ.2SG@2Sg+:@U.S.III@@D.OBJ.2SG@chi%{mN%}^ Appl;
@@ -95,10 +95,10 @@ LEXICON Subj-Sec
   @U.S.III@@D.OBJ.2PL@2Pl+:@U.S.III@@D.OBJ.2PL@hachi%{mN%}^ Appl ;
   @U.S.III@Unsp+:@U.S.III@i%{mN%}^ Appl ;
 
-  @U.S.II@@U.SUBJ.IMP@2Sg+:@U.S.II@@U.SUBJ.IMP@ Is-Trans ;
-  @U.S.II@@U.SUBJ.IMP@2Pl+:@U.S.II@@U.SUBJ.IMP@%{oh%} Is-Trans ;
-  @U.S.III@@U.SUBJ.IMP@2Sg+:@U.S.III@@U.SUBJ.IMP@ Is-Trans ;
-  @U.S.III@@U.SUBJ.IMP@2Pl+:@U.S.III@@U.SUBJ.IMP@%{oh%} Is-Trans ;
+  @U.S.II@@U.SUBJ.IMP@Imp+2Sg+:@U.S.II@@U.SUBJ.IMP@ Is-Trans ;
+  @U.S.II@@U.SUBJ.IMP@Imp+2Pl+:@U.S.II@@U.SUBJ.IMP@%{oh%} Is-Trans ;
+  @U.S.III@@U.SUBJ.IMP@Imp+2Sg+:@U.S.III@@U.SUBJ.IMP@ Is-Trans ;
+  @U.S.III@@U.SUBJ.IMP@Imp+2Pl+:@U.S.III@@U.SUBJ.IMP@%{oh%} Is-Trans ;
 
 
 LEXICON Vb

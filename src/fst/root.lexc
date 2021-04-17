@@ -18,9 +18,9 @@
 !! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Choctaw LANGUAGE.
 
 
-Multichar_Symbols  !!≈ !!!Definitions for @CODE@
+Multichar_Symbols  !!≈ # Definitions for @CODE@
 
-!! !!Analysis symbols
+!! ## Analysis symbols
 !  ----------------
 !! The morphological analyses of wordforms for the Choctaw
 !! language are presented in this system in terms of the following symbols.

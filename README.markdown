@@ -77,7 +77,7 @@ svn checkout https://github.com/giellalt/lang-cho.git/trunk lang-cho
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-cho/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-cho/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh

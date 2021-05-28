@@ -1,10 +1,10 @@
 template = ""
-rev_id = 70
-template_sha = "ed1d5195c9d61fedd6150cd217179e4cbbfe8e23"
+rev_id = 71
+template_sha = "bc64284a3bff60a9d5d9cb932b6368be8c133a53"
 
 [replacements]
 __LICENCE__ = "GPLv3"
+__REPO__ = "lang-cho"
 __UND2C__ = "cho"
 __UNDEFINED__ = "Choctaw"
 __UND__ = "cho"
-__REPO__ = "lang-cho"

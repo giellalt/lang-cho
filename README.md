@@ -3,13 +3,13 @@ The Choctaw morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-cho)](https://github.com/giellalt/lang-cho/issues)
 [![Build Status](https://github.com/giellalt/lang-cho/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-cho/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-cho)](https://raw.githubusercontent.com/giellalt/lang-cho/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-cho)](https://raw.githubusercontent.com/giellalt/lang-cho/main/LICENSE)
 
 This repository contains finite state source files for the Choctaw language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under GPLv3
 licence, also detailed in the
-[LICENSE](https://github.com/giellalt/lang-cho/blob/develop/LICENCE). The
+[LICENSE](https://github.com/giellalt/lang-cho/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 

@@ -1,7 +1,6 @@
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Choctaw LANGUAGE.
 
-
 # Definitions for Multichar_Symbols
 
 ## Analysis symbols
@@ -10,7 +9,6 @@ language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
 The parts-of-speech are:
-
 
 NOUNS
 Cases:
@@ -21,7 +19,6 @@ Possessive prefixes
 VERBS
 Not certain
 Causative and Question suffixes
-
 
 Verb person and tense markers
 
@@ -42,12 +39,7 @@ Case marking on participles
 VERBS
 Verb types
 
-
-
-
 Agreement prefixes/suffixes on verbs
-
-
 
 TODO sort these:
 
@@ -57,11 +49,13 @@ Actual multicharacters
 
 archiphonemes
 
-
 verb infix archiphonemes "grades"
-
 
 LEXICON START
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-cho/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-cho/blob/main/src/fst/root.lexc)</small>
+
+---
+

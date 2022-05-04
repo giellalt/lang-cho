@@ -1,7 +1,7 @@
 NOUNS
 Nouns in the Choctaw language are things. They also sometimes function as adjectives
 
-*nouns examples:*
+* nouns examples:*
 * *hachimaalak:* `aalak+N+Poss+2Pl`
 * *hachiNki':* `ki'+N+Poss+2Pl`
 

@@ -30,7 +30,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/chodoc/index.html>
+- [Language specific documentation](https://giellalt.github.io/lang-cho/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies

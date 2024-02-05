@@ -1,5 +1,5 @@
-name = "Choctaw"
-version = "0.1.0"
+spellername = "Choctaw"
+spellerversion = "0.1.0"
 
 # Name of the speller package in various languages.
 # The default is English + autonym:

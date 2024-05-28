@@ -9,3 +9,4 @@
 # processing.
 bin_SCRIPTS=ucho-gt.sh \
 	# Let this line end the definition
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am

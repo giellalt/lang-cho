@@ -150,7 +150,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +CLB
 +PUNCT
 +LEFT
-+RIGHT
++RIGHT +MIDDLE
 +Symbol
 
 !! Actual multicharacters
@@ -182,7 +182,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 
 ! adding for compatibility, some may be removed later
 +A +CLB +Ela +Err/Orth +Ess +Gen +Ill +Ine +LEFT +PUNCT +Pl +Prop
-+RIGHT +Sg +Symbol +cmp +pos +sup
++RIGHT +MIDDLE +Sg +Symbol +cmp +pos +sup
 
 !! LEXICON START
 LEXICON Root
